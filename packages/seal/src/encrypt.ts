@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromHex } from '@mysten/bcs';
-import { isValidSuiObjectId } from '@mysten/sui/utils';
+import { fromHex } from '@onelabs/bcs';
+import { isValidSuiObjectId } from '@onelabs/sui/utils';
 import { split as externalSplit } from 'shamir-secret-sharing';
 
 import type { IBEEncryptions } from './bcs.js';

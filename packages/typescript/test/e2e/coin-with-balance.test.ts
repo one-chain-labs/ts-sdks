@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromHex, toBase64 } from '@mysten/bcs';
+import { fromHex, toBase64 } from '@onelabs/bcs';
 import { beforeAll, describe, expect, it } from 'vitest';
 
 import { bcs } from '../../src/bcs';
@@ -166,7 +166,7 @@ describe('coinWithBalance', () => {
 			),
 		).toEqual({
 			amount: '12345',
-			coinType: '0x2::sui::SUI',
+			coinType: '0x2::oct::OCT',
 			owner: {
 				AddressOwner: receiver.toSuiAddress(),
 			},
@@ -718,7 +718,7 @@ describe('coinWithBalance', () => {
 		).toEqual([
 			{
 				amount: '7',
-				coinType: '0x2::sui::SUI',
+				coinType: '0x2::oct::OCT',
 				owner: {
 					AddressOwner: receiver.toSuiAddress(),
 				},

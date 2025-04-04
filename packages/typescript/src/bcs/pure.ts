@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { bcs } from '@mysten/bcs';
-import type { BcsType } from '@mysten/bcs';
+import { bcs } from '@onelabs/bcs';
+import type { BcsType } from '@onelabs/bcs';
 
 import { Address } from './bcs.js';
 

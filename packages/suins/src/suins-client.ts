@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
-import type { SuiClient } from '@mysten/sui/client';
-import type { Transaction } from '@mysten/sui/transactions';
-import { isValidSuiNSName, normalizeSuiNSName } from '@mysten/sui/utils';
+import type { SuiClient } from '@onelabs/sui/client';
+import type { Transaction } from '@onelabs/sui/transactions';
+import { isValidSuiNSName, normalizeSuiNSName } from '@onelabs/sui/utils';
 
 import { mainPackage } from './constants.js';
 import {
@@ -166,7 +166,7 @@ export class SuinsClient {
 	// Format:
 	// {
 	// 	'b48aac3f53bab328e1eb4c5b3c34f55e760f2fb3f2305ee1a474878d80f650f0::TESTUSDC::TESTUSDC' => 0,
-	// 	'0000000000000000000000000000000000000000000000000000000000000002::sui::SUI' => 0,
+	// 	'0000000000000000000000000000000000000000000000000000000000000002::oct::OCT' => 0,
 	// 	'b48aac3f53bab328e1eb4c5b3c34f55e760f2fb3f2305ee1a474878d80f650f0::TESTNS::TESTNS' => 25
 	// }
 	async getCoinTypeDiscount(): Promise<CoinTypeDiscount> {

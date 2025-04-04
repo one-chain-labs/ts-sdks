@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { toBase64 } from '@mysten/bcs';
+import { toBase64 } from '@onelabs/bcs';
 
 import type { bcs } from '../../bcs/index.js';
 import type { SuiClient, SuiTransactionBlockResponseOptions } from '../../client/index.js';

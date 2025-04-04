@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { getFullnodeUrl, isSuiClient, SuiClient } from '@mysten/sui/client';
-import type { SuiClientOptions } from '@mysten/sui/client';
+import { getFullnodeUrl, isSuiClient, SuiClient } from '@onelabs/sui/client';
+import type { SuiClientOptions } from '@onelabs/sui/client';
 import { createContext, useMemo, useState } from 'react';
 
 import type { NetworkConfig } from '../hooks/networkConfig.js';

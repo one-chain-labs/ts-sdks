@@ -1,5 +1,5 @@
 {
-	"name": "@mysten/ts-sdks",
+	"name": "@onelabs/ts-sdks",
 	"private": true,
 	"license": "Apache-2.0",
 	"scripts": {
@@ -8,7 +8,7 @@
 		"icons": "pnpm --filter ./apps/icons",
 		"wallet": "turbo --filter ./apps/wallet",
 		"bcs": "turbo --filter ./packages/bcs",
-		"changeset-version": "pnpm changeset version && pnpm --filter @mysten/sui codegen:version",
+		"changeset-version": "pnpm changeset version && pnpm --filter @onelabs/sui codegen:version",
 		"prettier:check": "prettier -c --ignore-unknown .",
 		"prettier:fix": "prettier -w --ignore-unknown .",
 		"prettier:fix:watch": "onchange '**' -i -f add -f change -j 5 -- prettier -w --ignore-unknown {{file}}",
@@ -16,7 +16,8 @@
 		"eslint:fix": "pnpm run eslint:check --fix",
 		"lint": "pnpm run eslint:check && pnpm run prettier:check",
 		"lint:fix": "pnpm run eslint:fix && pnpm run prettier:fix",
-		"build": "turbo run build"
+		"build": "turbo run build",
+		"publish": "pnpm changeset-version && npx changeset publish"
 	},
 	"pnpm": {
 		"overrides": {

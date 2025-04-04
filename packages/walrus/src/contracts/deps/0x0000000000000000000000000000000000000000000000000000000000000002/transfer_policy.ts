@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { bcs } from '@mysten/sui/bcs';
+import { bcs } from '@onelabs/sui/bcs';
 
 import * as type_name from '../0x0000000000000000000000000000000000000000000000000000000000000001/type_name.js';
 import * as balance from './balance.js';

@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { InferBcsType } from '@mysten/bcs';
-import type { SuiMoveNormalizedType } from '@mysten/sui/client';
+import type { InferBcsType } from '@onelabs/bcs';
+import type { SuiMoveNormalizedType } from '@onelabs/sui/client';
 
 import type { Committee } from '../contracts/committee.js';
 import type { EncodingType } from '../types.js';

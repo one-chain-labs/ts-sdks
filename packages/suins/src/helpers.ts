@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { Transaction } from '@mysten/sui/transactions';
-import { normalizeSuiNSName } from '@mysten/sui/utils';
+import type { Transaction } from '@onelabs/sui/transactions';
+import { normalizeSuiNSName } from '@onelabs/sui/utils';
 
 export function isSubName(name: string): boolean {
 	return normalizeSuiNSName(name, 'dot').split('.').length > 2;

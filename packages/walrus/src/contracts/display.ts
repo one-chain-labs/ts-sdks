@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { bcs } from '@mysten/sui/bcs';
-import type { Transaction } from '@mysten/sui/transactions';
+import { bcs } from '@onelabs/sui/bcs';
+import type { Transaction } from '@onelabs/sui/transactions';
 
 import * as object_bag from './deps/0x0000000000000000000000000000000000000000000000000000000000000002/object_bag.js';
 import * as object from './deps/0x0000000000000000000000000000000000000000000000000000000000000002/object.js';

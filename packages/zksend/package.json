@@ -1,9 +1,9 @@
 {
-	"name": "@mysten/zksend",
+	"name": "@onelabs/zksend",
 	"version": "0.12.22",
 	"description": "TODO: Write Description",
 	"license": "Apache-2.0",
-	"author": "Mysten Labs <build@mystenlabs.com>",
+	"author": "Mysten Labs <build@onelabslabs.com>",
 	"type": "commonjs",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.js",
@@ -32,21 +32,21 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/mystenlabs/ts-sdks.git"
+		"url": "git+https://github.com/one-chain-labs/ts-sdks.git"
 	},
 	"bugs": {
-		"url": "https://github.com/mystenlabs/ts-sdks/issues"
+		"url": "https://github.com/one-chain-labs/ts-sdks/issues"
 	},
-	"homepage": "https://github.com/mystenlabs/ts-sdks#readme",
+	"homepage": "https://github.com/one-chain-labs/ts-sdks#readme",
 	"devDependencies": {
-		"@mysten/build-scripts": "workspace:*",
+		"@onelabs/build-scripts": "workspace:*",
 		"@types/node": "^22.13.17",
 		"typescript": "^5.8.2",
 		"vitest": "^3.1.1"
 	},
 	"dependencies": {
-		"@mysten/sui": "workspace:*",
-		"@mysten/wallet-standard": "workspace:*",
+		"@onelabs/sui": "workspace:*",
+		"@onelabs/wallet-standard": "workspace:*",
 		"mitt": "^3.0.1",
 		"nanostores": "^0.10.3",
 		"valibot": "^0.36.0"

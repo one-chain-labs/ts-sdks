@@ -1,9 +1,9 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { SignatureScheme } from '@mysten/sui/cryptography';
-import { Signer } from '@mysten/sui/cryptography';
-import { Secp256r1PublicKey } from '@mysten/sui/keypairs/secp256r1';
+import type { SignatureScheme } from '@onelabs/sui/cryptography';
+import { Signer } from '@onelabs/sui/cryptography';
+import { Secp256r1PublicKey } from '@onelabs/sui/keypairs/secp256r1';
 import { secp256r1 } from '@noble/curves/p256';
 
 // Convert from uncompressed (65 bytes) to compressed (33 bytes) format

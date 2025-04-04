@@ -1,1 +1,1 @@
-# `@mysten/enoki`
+# `@onelabs/enoki`

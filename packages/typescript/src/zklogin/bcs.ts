@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { InferBcsInput } from '@mysten/bcs';
-import { bcs } from '@mysten/bcs';
+import type { InferBcsInput } from '@onelabs/bcs';
+import { bcs } from '@onelabs/bcs';
 
 export const zkLoginSignature = bcs.struct('ZkLoginSignature', {
 	inputs: bcs.struct('ZkLoginSignatureInputs', {

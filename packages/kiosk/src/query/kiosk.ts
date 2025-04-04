@@ -7,8 +7,8 @@ import type {
 	SuiClient,
 	SuiObjectData,
 	SuiObjectResponse,
-} from '@mysten/sui/client';
-import { isValidSuiAddress } from '@mysten/sui/utils';
+} from '@onelabs/sui/client';
+import { isValidSuiAddress } from '@onelabs/sui/utils';
 
 import type {
 	FetchKioskOptions,

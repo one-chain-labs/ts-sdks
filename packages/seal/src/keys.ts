@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromBase64, toBase64, toHex } from '@mysten/bcs';
+import { fromBase64, toBase64, toHex } from '@onelabs/bcs';
 
 import { elgamalDecrypt, toPublicKey, toVerificationKey } from './elgamal.js';
 import { SealAPIError } from './error.js';

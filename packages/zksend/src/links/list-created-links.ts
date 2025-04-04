@@ -1,11 +1,11 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { bcs } from '@mysten/sui/bcs';
-import type { SuiClient } from '@mysten/sui/client';
-import { SuiGraphQLClient } from '@mysten/sui/graphql';
-import { graphql } from '@mysten/sui/graphql/schemas/latest';
-import { fromBase64, normalizeSuiAddress } from '@mysten/sui/utils';
+import { bcs } from '@onelabs/sui/bcs';
+import type { SuiClient } from '@onelabs/sui/client';
+import { SuiGraphQLClient } from '@onelabs/sui/graphql';
+import { graphql } from '@onelabs/sui/graphql/schemas/latest';
+import { fromBase64, normalizeSuiAddress } from '@onelabs/sui/utils';
 
 import { ZkSendLink } from './claim.js';
 import type { ZkBagContractOptions } from './zk-bag.js';

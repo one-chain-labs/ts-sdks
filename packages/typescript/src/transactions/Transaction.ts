@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { SerializedBcs } from '@mysten/bcs';
-import { fromBase64, isSerializedBcs } from '@mysten/bcs';
+import type { SerializedBcs } from '@onelabs/bcs';
+import { fromBase64, isSerializedBcs } from '@onelabs/bcs';
 import type { InferInput } from 'valibot';
 import { is, parse } from 'valibot';
 
@@ -87,7 +87,7 @@ function createTransactionResult(index: number, length = Infinity): TransactionR
 	}) as TransactionResult;
 }
 
-const TRANSACTION_BRAND = Symbol.for('@mysten/transaction') as never;
+const TRANSACTION_BRAND = Symbol.for('@onelabs/transaction') as never;
 
 interface SignOptions extends BuildTransactionOptions {
 	signer: Signer;
@@ -111,7 +111,7 @@ const modulePluginRegistry: TransactionPluginRegistry = {
 	serializationPlugins: new Map(),
 };
 
-const TRANSACTION_REGISTRY_KEY = Symbol.for('@mysten/transaction/registry');
+const TRANSACTION_REGISTRY_KEY = Symbol.for('@onelabs/transaction/registry');
 function getGlobalPluginRegistry() {
 	try {
 		const target = globalThis as {

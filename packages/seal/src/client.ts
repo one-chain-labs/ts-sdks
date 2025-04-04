@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { SuiClient } from '@mysten/sui/client';
+import type { SuiClient } from '@onelabs/sui/client';
 
 import { EncryptedObject } from './bcs.js';
 import { G1Element, G2Element } from './bls12381.js';

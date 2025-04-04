@@ -24,7 +24,7 @@ export {
 	toBase64,
 	fromBase58,
 	toBase58,
-} from '@mysten/bcs';
+} from '@onelabs/bcs';
 export { isValidSuiNSName, normalizeSuiNSName } from './suins.js';
 
 export {

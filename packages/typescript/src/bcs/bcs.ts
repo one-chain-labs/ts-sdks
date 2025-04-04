@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { BcsType, BcsTypeOptions } from '@mysten/bcs';
-import { bcs, fromBase58, fromBase64, fromHex, toBase58, toBase64, toHex } from '@mysten/bcs';
+import type { BcsType, BcsTypeOptions } from '@onelabs/bcs';
+import { bcs, fromBase58, fromBase64, fromHex, toBase58, toBase64, toHex } from '@onelabs/bcs';
 
 import { isValidSuiAddress, normalizeSuiAddress, SUI_ADDRESS_LENGTH } from '../utils/sui-types.js';
 import { TypeTagSerializer } from './type-tag-serializer.js';

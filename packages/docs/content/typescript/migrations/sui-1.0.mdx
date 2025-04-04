@@ -14,29 +14,29 @@ highlights:
 - [New Transaction Intents to simplify common transaction patterns](../transaction-building/intents)
 - [A new Plugin system for Extending Transaction Building](../plugins)
 
-The majority of changes in this release are in the `@mysten/sui` package, but the changes to API
+The majority of changes in this release are in the `@onelabs/sui` package, but the changes to API
 require some breaking changes across all the Typescript SDKs. You can find migration guides for all
 affected packages below:
 
-## Changes to `@mysten/sui`
+## Changes to `@onelabs/sui`
 
-As part of the 1.0 release the `@mysten/sui.js` package has been renamed to `@mysten/sui`
+As part of the 1.0 release the `@onelabs/sui.js` package has been renamed to `@onelabs/sui`
 
 To upgrade to the new version, uninstall the old package and install the new one:
 
 ```sh npm2yarn
-npm uninstall @mysten/sui.js
-npm install @mysten/sui
+npm uninstall @onelabs/sui.js
+npm install @onelabs/sui
 ```
 
 Then update all imports to use the new package name:
 
 ```diff
-- import { SuiClient } from '@mysten/sui.js'
-+ import { SuiClient } from '@mysten/sui'
+- import { SuiClient } from '@onelabs/sui.js'
++ import { SuiClient } from '@onelabs/sui'
 ```
 
-### `@mysten/sui/transactions`
+### `@onelabs/sui/transactions`
 
 The largest changes in the 1.0 release are all centered around how Transactions are built and
 executed. This includes are complete rewrite of the internal representation of transactions, as well
@@ -135,8 +135,8 @@ the bcs library, or use one of the provided helper methods.
 The `Transactions` export has been renamed to `Commands` and some of the options have been renamed:
 
 ```diff
-- import { Transactions } from '@mysten/sui/transactions'
-+ import { Commands } from '@mysten/sui/transactions'
+- import { Transactions } from '@onelabs/sui/transactions'
++ import { Commands } from '@onelabs/sui/transactions'
 
  tx.makeMoveVec({
    type: '0x123::foo:Bar'
@@ -175,7 +175,7 @@ have been updated to return the new format
 
 The `getPureSerializationType` utility function has been removed.
 
-## `@mysten/sui/bcs`
+## `@onelabs/sui/bcs`
 
 ### Bcs Types
 
@@ -190,7 +190,7 @@ The correct way to get Typescript types for the exported BCS types is to use the
 helper:
 
 ```ts
-import { bcs } from '@mysten/sui/bcs';
+import { bcs } from '@onelabs/sui/bcs';
 
 function callArg(arg: typeof bcs.CallArg.$inferType) {
 	// ...
@@ -204,11 +204,11 @@ helpers have been removed.
 
 ## /multisig
 
-The `publicKeyFromSuiBytes` has been moved to `@mysten/sui/verify`
+The `publicKeyFromSuiBytes` has been moved to `@onelabs/sui/verify`
 
 ```diff
-- import { publicKeyFromSuiBytes } from '@mysten/sui/multisig'
-+ import { publicKeyFromSuiBytes } from '@mysten/sui/verify'
+- import { publicKeyFromSuiBytes } from '@onelabs/sui/multisig'
++ import { publicKeyFromSuiBytes } from '@onelabs/sui/verify'
 ```
 
 ## /verify
@@ -219,11 +219,11 @@ The methods for verifying signatures have been renamed
 - import {
 -   verifyTransactionBlock
 -   verifyPersonalMessage
-- } from '@mysten/sui/verify'
+- } from '@onelabs/sui/verify'
 + import {
 +   verifyTransactionSignature
 +   verifyPersonalMessageSignature
-+ } from '@mysten/sui/verify'
++ } from '@onelabs/sui/verify'
 ```
 
 ## /cryptography
@@ -239,7 +239,7 @@ For some keypair implementations, the `signPersonalMessage` method incorrectly r
 encoded version of the signed message. All `signPersonalMessage` implementations now correctly
 return the unwrapped bytes of the message that was signed
 
-# @mysten/bcs
+# @onelabs/bcs
 
 ## The Registry
 
@@ -263,7 +263,7 @@ easier to parse BCS data from various string encodings.
 
 ## Generics
 
-We previously deprecated the `generic` helper exported from `@mysten/bcs`. This helper has now been
+We previously deprecated the `generic` helper exported from `@onelabs/bcs`. This helper has now been
 entirely removed.
 
 ## Enums
@@ -293,7 +293,7 @@ if (parsed.Variant0 !== undefined) {
 }
 ```
 
-# @mysten/kiosk
+# @onelabs/kiosk
 
 The options passed to `KioskTransaction` and `TransferPolicyTransaction` have been updated to
 replace `transactionBlock` with `transaction`.
@@ -314,7 +314,7 @@ than the `transactionBlock`.
 + resolveRuleFunction({ transaction }) => { ... }
 ```
 
-# @mysten/enoki
+# @onelabs/enoki
 
 The Enoki SDK has been updated to replace TransactionBlock terminology with Transaction throughout
 the API:
@@ -407,15 +407,15 @@ This change decouples the `useSignAndExecuteTransaction` hook from a specific RP
 implementation, and will enable migration to GraphQL without additional breaking changes in this
 hook.
 
-# @mysten/zksend
+# @onelabs/zksend
 
 The `getSentTransactionBlocksWithLinks` method has been renamed to `getSentTransactionsWithLinks`,
 and all methods that previously accepted a `transactionBlock` option now accept a `transaction`
 instead instead.
 
 ```diff
-- import { getSentTransactionBlocksWithLinks, ZkSendLinkBuilder } from '@mysten/zksend'
-+ import { getSentTransactionsWithLinks, ZkSendLinkBuilder } from '@mysten/zksend'
+- import { getSentTransactionBlocksWithLinks, ZkSendLinkBuilder } from '@onelabs/zksend'
++ import { getSentTransactionsWithLinks, ZkSendLinkBuilder } from '@onelabs/zksend'
 
   const tx = new Transaction();
   const link = new ZkSendLinkBuilder({
@@ -428,7 +428,7 @@ instead instead.
   });
 ```
 
-# @mysten/wallet-standard
+# @onelabs/wallet-standard
 
 ### New wallet-standard features
 
@@ -450,7 +450,7 @@ broadly adopted by dapps.
 either the new or old wallet-standard methods: `signTransaction` and `signAndExecuteTransaction`.
 
 ```ts
-import { signAndExecuteTransaction, signTransaction } from '@mysten/wallet-standard';
+import { signAndExecuteTransaction, signTransaction } from '@onelabs/wallet-standard';
 
 const { signature, bytes } = await signTransaction(wallet, { transaction });
 const { digest, effects } = await signAndExecuteTransaction(wallet, { transaction });

@@ -1,11 +1,11 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { BcsType } from '@mysten/bcs';
-import { pureBcsSchemaFromTypeName } from '@mysten/sui/bcs';
-import type { PureTypeName, ShapeFromPureTypeName } from '@mysten/sui/bcs';
-import type { SuiClient, SuiObjectData, SuiObjectResponse } from '@mysten/sui/client';
-import { deriveDynamicFieldID } from '@mysten/sui/utils';
+import type { BcsType } from '@onelabs/bcs';
+import { pureBcsSchemaFromTypeName } from '@onelabs/sui/bcs';
+import type { PureTypeName, ShapeFromPureTypeName } from '@onelabs/sui/bcs';
+import type { SuiClient, SuiObjectData, SuiObjectResponse } from '@onelabs/sui/client';
+import { deriveDynamicFieldID } from '@onelabs/sui/utils';
 import DataLoader from 'dataloader';
 
 import { Field } from '../contracts/deps/0x0000000000000000000000000000000000000000000000000000000000000002/dynamic_field.js';

@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
-import { coinWithBalance } from '@mysten/sui/transactions';
-import type { Transaction } from '@mysten/sui/transactions';
-import { SUI_CLOCK_OBJECT_ID } from '@mysten/sui/utils';
+import { coinWithBalance } from '@onelabs/sui/transactions';
+import type { Transaction } from '@onelabs/sui/transactions';
+import { SUI_CLOCK_OBJECT_ID } from '@onelabs/sui/utils';
 
 import { OrderType, SelfMatchingOptions } from '../types/index.js';
 import type {

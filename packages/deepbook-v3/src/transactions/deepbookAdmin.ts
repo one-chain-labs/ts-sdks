@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { Transaction } from '@mysten/sui/transactions';
+import type { Transaction } from '@onelabs/sui/transactions';
 
 import type { CreatePoolAdminParams } from '../types/index.js';
 import type { DeepBookConfig } from '../utils/config.js';

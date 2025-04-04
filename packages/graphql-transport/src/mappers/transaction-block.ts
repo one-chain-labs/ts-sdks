@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromBase64, toBase58 } from '@mysten/bcs';
-import { bcs } from '@mysten/sui/bcs';
+import { fromBase64, toBase58 } from '@onelabs/bcs';
+import { bcs } from '@onelabs/sui/bcs';
 import type {
 	SuiArgument,
 	SuiCallArg,
@@ -12,8 +12,8 @@ import type {
 	SuiTransactionBlockKind,
 	SuiTransactionBlockResponse,
 	SuiTransactionBlockResponseOptions,
-} from '@mysten/sui/client';
-import { normalizeSuiAddress } from '@mysten/sui/utils';
+} from '@onelabs/sui/client';
+import { normalizeSuiAddress } from '@onelabs/sui/utils';
 
 import type { Rpc_Transaction_FieldsFragment } from '../generated/queries.js';
 import { toShortTypeString } from './util.js';

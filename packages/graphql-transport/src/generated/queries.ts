@@ -162,7 +162,7 @@ export type Address = IOwner & {
   address: Scalars['SuiAddress']['output'];
   /**
    * Total balance of all coins with marker type owned by this address. If type is not supplied,
-   * it defaults to `0x2::sui::SUI`.
+   * it defaults to `0x2::oct::OCT`.
    */
   balance?: Maybe<Balance>;
   /** The balances of all coin types owned by this address. */
@@ -170,7 +170,7 @@ export type Address = IOwner & {
   /**
    * The coin objects for this address.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /** The domain explicitly configured as the default domain pointing to this address. */
@@ -373,7 +373,7 @@ export type Balance = {
   __typename?: 'Balance';
   /** How many coins of this type constitute the balance */
   coinObjectCount?: Maybe<Scalars['UInt53']['output']>;
-  /** Coin type for the balance, such as 0x2::sui::SUI */
+  /** Coin type for the balance, such as 0x2::oct::OCT */
   coinType: MoveType;
   /** Total balance across all coin objects of the coin type */
   totalBalance?: Maybe<Scalars['BigInt']['output']>;
@@ -384,7 +384,7 @@ export type BalanceChange = {
   __typename?: 'BalanceChange';
   /** The signed balance change. */
   amount?: Maybe<Scalars['BigInt']['output']>;
-  /** The inner type of the coin whose balance has changed (e.g. `0x2::sui::SUI`). */
+  /** The inner type of the coin whose balance has changed (e.g. `0x2::oct::OCT`). */
   coinType?: Maybe<MoveType>;
   /** The address or object whose balance has changed. */
   owner?: Maybe<Owner>;
@@ -596,7 +596,7 @@ export type Coin = IMoveObject & IObject & IOwner & {
   address: Scalars['SuiAddress']['output'];
   /**
    * Total balance of all coins with marker type owned by this object. If type is not supplied,
-   * it defaults to `0x2::sui::SUI`.
+   * it defaults to `0x2::oct::OCT`.
    */
   balance?: Maybe<Balance>;
   /** The balances of all coin types owned by this object. */
@@ -608,7 +608,7 @@ export type Coin = IMoveObject & IObject & IOwner & {
   /**
    * The coin objects for this object.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /**
@@ -835,7 +835,7 @@ export type CoinMetadata = IMoveObject & IObject & IOwner & {
   address: Scalars['SuiAddress']['output'];
   /**
    * Total balance of all coins with marker type owned by this object. If type is not supplied,
-   * it defaults to `0x2::sui::SUI`.
+   * it defaults to `0x2::oct::OCT`.
    */
   balance?: Maybe<Balance>;
   /** The balances of all coin types owned by this object. */
@@ -845,7 +845,7 @@ export type CoinMetadata = IMoveObject & IObject & IOwner & {
   /**
    * The coin objects for this object.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /**
@@ -1323,7 +1323,7 @@ export type Epoch = {
   /** Parameters related to the subsidy that supplements staking rewards */
   systemStakeSubsidy?: Maybe<StakeSubsidy>;
   /**
-   * The value of the `version` field of `0x5`, the `0x3::sui::SuiSystemState` object.  This
+   * The value of the `version` field of `0x5`, the `0x3::oct::OCTSystemState` object.  This
    * version changes whenever the fields contained in the system state object (held in a dynamic
    * field attached to `0x5`) change.
    */
@@ -1482,7 +1482,7 @@ export type EventFilter = {
    *
    * Generic types can be queried by either the generic type name, e.g.
    * `0x2::coin::Coin`, or by the full type name, such as
-   * `0x2::coin::Coin<0x2::sui::SUI>`.
+   * `0x2::coin::Coin<0x2::oct::OCT>`.
    */
   eventType?: InputMaybe<Scalars['String']['input']>;
   /** Filter down to events from transactions sent by this address. */
@@ -1738,14 +1738,14 @@ export type IObjectReceivedTransactionBlocksArgs = {
  */
 export type IOwner = {
   address: Scalars['SuiAddress']['output'];
-  /** Total balance of all coins with marker type owned by this object or address. If type is not supplied, it defaults to `0x2::sui::SUI`. */
+  /** Total balance of all coins with marker type owned by this object or address. If type is not supplied, it defaults to `0x2::oct::OCT`. */
   balance?: Maybe<Balance>;
   /** The balances of all coin types owned by this object or address. */
   balances: BalanceConnection;
   /**
    * The coin objects for this object or address.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /** The domain explicitly configured as the default domain pointing to this object or address. */
@@ -2244,7 +2244,7 @@ export type MoveObject = IMoveObject & IObject & IOwner & {
   asSuinsRegistration?: Maybe<SuinsRegistration>;
   /**
    * Total balance of all coins with marker type owned by this object. If type is not supplied,
-   * it defaults to `0x2::sui::SUI`.
+   * it defaults to `0x2::oct::OCT`.
    */
   balance?: Maybe<Balance>;
   /** The balances of all coin types owned by this object. */
@@ -2254,7 +2254,7 @@ export type MoveObject = IMoveObject & IObject & IOwner & {
   /**
    * The coin objects for this object.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /**
@@ -2511,7 +2511,7 @@ export type MovePackage = IObject & IOwner & {
   address: Scalars['SuiAddress']['output'];
   /**
    * Total balance of all coins with marker type owned by this package. If type is not supplied,
-   * it defaults to `0x2::sui::SUI`.
+   * it defaults to `0x2::oct::OCT`.
    *
    * Note that coins owned by a package are inaccessible, because packages are immutable and
    * cannot be owned by an address.
@@ -2529,7 +2529,7 @@ export type MovePackage = IObject & IOwner & {
   /**
    * The coin objects owned by this package.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    *
    * Note that coins owned by a package are inaccessible, because packages are immutable and
    * cannot be owned by an address.
@@ -2979,7 +2979,7 @@ export type Object = IObject & IOwner & {
   asMovePackage?: Maybe<MovePackage>;
   /**
    * Total balance of all coins with marker type owned by this object. If type is not supplied,
-   * it defaults to `0x2::sui::SUI`.
+   * it defaults to `0x2::oct::OCT`.
    */
   balance?: Maybe<Balance>;
   /** The balances of all coin types owned by this object. */
@@ -2989,7 +2989,7 @@ export type Object = IObject & IOwner & {
   /**
    * The coin objects for this object.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /** The domain explicitly configured as the default domain pointing to this object. */
@@ -3293,7 +3293,7 @@ export type ObjectFilter = {
    * name.
    *
    * Generic types can be queried by either the generic type name, e.g. `0x2::coin::Coin`, or by
-   * the full type name, such as `0x2::coin::Coin<0x2::sui::SUI>`.
+   * the full type name, such as `0x2::coin::Coin<0x2::oct::OCT>`.
    */
   type?: InputMaybe<Scalars['String']['input']>;
 };
@@ -3365,7 +3365,7 @@ export type Owner = IOwner & {
   asObject?: Maybe<Object>;
   /**
    * Total balance of all coins with marker type owned by this object or address. If type is not
-   * supplied, it defaults to `0x2::sui::SUI`.
+   * supplied, it defaults to `0x2::oct::OCT`.
    */
   balance?: Maybe<Balance>;
   /** The balances of all coin types owned by this object or address. */
@@ -3373,7 +3373,7 @@ export type Owner = IOwner & {
   /**
    * The coin objects for this object or address.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /** The domain explicitly configured as the default domain pointing to this object or address. */
@@ -3724,7 +3724,7 @@ export type Query = {
    * The coin objects that exist in the network.
    *
    * The type field is a string of the inner type of the coin by which to filter (e.g.
-   * `0x2::sui::SUI`). If no type is provided, it will default to `0x2::sui::SUI`.
+   * `0x2::oct::OCT`). If no type is provided, it will default to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /**
@@ -4306,7 +4306,7 @@ export type StakedSui = IMoveObject & IObject & IOwner & {
   address: Scalars['SuiAddress']['output'];
   /**
    * Total balance of all coins with marker type owned by this object. If type is not supplied,
-   * it defaults to `0x2::sui::SUI`.
+   * it defaults to `0x2::oct::OCT`.
    */
   balance?: Maybe<Balance>;
   /** The balances of all coin types owned by this object. */
@@ -4316,7 +4316,7 @@ export type StakedSui = IMoveObject & IObject & IOwner & {
   /**
    * The coin objects for this object.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /**
@@ -4572,7 +4572,7 @@ export type SuinsRegistration = IMoveObject & IObject & IOwner & {
   address: Scalars['SuiAddress']['output'];
   /**
    * Total balance of all coins with marker type owned by this object. If type is not supplied,
-   * it defaults to `0x2::sui::SUI`.
+   * it defaults to `0x2::oct::OCT`.
    */
   balance?: Maybe<Balance>;
   /** The balances of all coin types owned by this object. */
@@ -4582,7 +4582,7 @@ export type SuinsRegistration = IMoveObject & IObject & IOwner & {
   /**
    * The coin objects for this object.
    *
-   * `type` is a filter on the coin's type parameter, defaulting to `0x2::sui::SUI`.
+   * `type` is a filter on the coin's type parameter, defaulting to `0x2::oct::OCT`.
    */
   coins: CoinConnection;
   /**
@@ -6975,7 +6975,7 @@ export const GetAllBalancesDocument = new TypedDocumentString(`
 }
     `) as unknown as TypedDocumentString<GetAllBalancesQuery, GetAllBalancesQueryVariables>;
 export const GetBalanceDocument = new TypedDocumentString(`
-    query getBalance($owner: SuiAddress!, $type: String = "0x2::sui::SUI") {
+    query getBalance($owner: SuiAddress!, $type: String = "0x2::oct::OCT") {
   address(address: $owner) {
     balance(type: $type) {
       coinType {
@@ -7005,7 +7005,7 @@ export const GetCoinMetadataDocument = new TypedDocumentString(`
 }
     `) as unknown as TypedDocumentString<GetCoinMetadataQuery, GetCoinMetadataQueryVariables>;
 export const GetCoinsDocument = new TypedDocumentString(`
-    query getCoins($owner: SuiAddress!, $first: Int, $cursor: String, $type: String = "0x2::sui::SUI") {
+    query getCoins($owner: SuiAddress!, $first: Int, $cursor: String, $type: String = "0x2::oct::OCT") {
   address(address: $owner) {
     address
     coins(first: $first, after: $cursor, type: $type) {

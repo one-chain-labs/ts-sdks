@@ -1,13 +1,13 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type SuiLedgerClient from '@mysten/ledgerjs-hw-app-sui';
-import type { SuiClient } from '@mysten/sui/client';
-import type { SignatureWithBytes } from '@mysten/sui/cryptography';
-import { messageWithIntent, Signer, toSerializedSignature } from '@mysten/sui/cryptography';
-import { Ed25519PublicKey } from '@mysten/sui/keypairs/ed25519';
-import { Transaction } from '@mysten/sui/transactions';
-import { toBase64 } from '@mysten/sui/utils';
+import type SuiLedgerClient from '@onelabs/ledgerjs-hw-app-sui';
+import type { SuiClient } from '@onelabs/sui/client';
+import type { SignatureWithBytes } from '@onelabs/sui/cryptography';
+import { messageWithIntent, Signer, toSerializedSignature } from '@onelabs/sui/cryptography';
+import { Ed25519PublicKey } from '@onelabs/sui/keypairs/ed25519';
+import { Transaction } from '@onelabs/sui/transactions';
+import { toBase64 } from '@onelabs/sui/utils';
 
 import { SuiMoveObject } from './bcs.js';
 

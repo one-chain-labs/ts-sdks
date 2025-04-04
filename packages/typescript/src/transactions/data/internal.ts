@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { EnumInputShape, EnumOutputShape } from '@mysten/bcs';
+import type { EnumInputShape, EnumOutputShape } from '@onelabs/bcs';
 import type { GenericSchema, InferInput, InferOutput } from 'valibot';
 import {
 	array,

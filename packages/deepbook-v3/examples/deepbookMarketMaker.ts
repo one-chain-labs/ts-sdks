@@ -1,10 +1,10 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
-import { decodeSuiPrivateKey } from '@mysten/sui/cryptography';
-import type { Keypair } from '@mysten/sui/cryptography';
-import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
-import type { Transaction } from '@mysten/sui/transactions';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
+import { decodeSuiPrivateKey } from '@onelabs/sui/cryptography';
+import type { Keypair } from '@onelabs/sui/cryptography';
+import { Ed25519Keypair } from '@onelabs/sui/keypairs/ed25519';
+import type { Transaction } from '@onelabs/sui/transactions';
 
 import { DeepBookClient } from '../src/index.js'; // Adjust path according to new structure
 import type { BalanceManager } from '../src/types/index.js';

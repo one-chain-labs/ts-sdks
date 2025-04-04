@@ -16,7 +16,7 @@ export const baseOptions: BaseLayoutProps = {
 	links: [
 		{
 			text: 'GitHub',
-			url: 'https://github.com/MystenLabs/ts-sdks',
+			url: 'https://github.com/one-chain-labs/ts-sdks',
 		},
 		{
 			text: 'Discord',

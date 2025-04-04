@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { StashedWallet } from '@mysten/zksend';
-import { registerStashedWallet } from '@mysten/zksend';
+import type { StashedWallet } from '@onelabs/zksend';
+import { registerStashedWallet } from '@onelabs/zksend';
 import { useEffect, useLayoutEffect, useState } from 'react';
 
 import { useAutoConnectWallet } from './useAutoConnectWallet.js';

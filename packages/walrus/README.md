@@ -1,9 +1,9 @@
-# `@mysten/walrus`
+# `@onelabs/walrus`
 
 ## Installation
 
 ```bash
-npm install --save @mysten/walrus @mysten/sui
+npm install --save @onelabs/walrus @onelabs/sui
 ```
 
 ## Setup
@@ -12,7 +12,7 @@ To use the walrus SDK you will need to create an instance of the SuiClient from 
 and an instance of the walrus SDK.
 
 ```ts
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
 
 import { WalrusClient } from '../src/index.js';
 
@@ -111,7 +111,7 @@ For a complete overview of the available methods on the `WalrusClient` you can r
 ### Examples
 
 There are a number of simple
-[examples you can reference](https://github.com/MystenLabs/ts-sdks/tree/main/packages/walrus/examples)
+[examples you can reference](https://github.com/one-chain-labs/ts-sdks/tree/main/packages/walrus/examples)
 in the `ts-sdks` repo that show things like building simple aggregators and publishers with the
 walrus SDK
 
@@ -125,7 +125,7 @@ that result from this situation will extend the `RetryableWalrusClientError` cla
 You can check for these errors, and reset the client before retrying:
 
 ```ts
-import { RetryableWalrusClientError } from '@mysten/walrus';
+import { RetryableWalrusClientError } from '@onelabs/walrus';
 
 if (error instanceof RetryableWalrusClientError) {
 	walrusClient.reset();

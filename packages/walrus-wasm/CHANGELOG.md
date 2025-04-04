@@ -1,4 +1,4 @@
-# @mysten/walrus-wasm
+# @onelabs/walrus-wasm
 
 ## 0.0.4
 

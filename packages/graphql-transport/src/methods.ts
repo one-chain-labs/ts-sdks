@@ -1,16 +1,16 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromBase64, toBase58 } from '@mysten/bcs';
+import { fromBase64, toBase58 } from '@onelabs/bcs';
 import type {
 	MoveValue,
 	ProtocolConfigValue,
 	SuiArgument,
 	SuiClient,
 	SuiMoveNormalizedModule,
-} from '@mysten/sui/client';
-import { Transaction } from '@mysten/sui/transactions';
-import { normalizeStructTag, normalizeSuiAddress, parseStructTag } from '@mysten/sui/utils';
+} from '@onelabs/sui/client';
+import { Transaction } from '@onelabs/sui/transactions';
+import { normalizeStructTag, normalizeSuiAddress, parseStructTag } from '@onelabs/sui/utils';
 
 import type {
 	ObjectFilter,

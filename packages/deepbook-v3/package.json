@@ -1,6 +1,6 @@
 {
-	"name": "@mysten/deepbook-v3",
-	"author": "Mysten Labs <build@mystenlabs.com>",
+	"name": "@onelabs/deepbook-v3",
+	"author": "Mysten Labs <build@onelabslabs.com>",
 	"description": "Sui Deepbook SDK",
 	"version": "0.13.5",
 	"license": "Apache-2.0",
@@ -34,11 +34,11 @@
 		"lint:fix": "pnpm run eslint:fix && pnpm run prettier:fix"
 	},
 	"dependencies": {
-		"@mysten/sui": "workspace:*"
+		"@onelabs/sui": "workspace:*"
 	},
 	"devDependencies": {
 		"@iarna/toml": "^2.2.5",
-		"@mysten/build-scripts": "workspace:*",
+		"@onelabs/build-scripts": "workspace:*",
 		"@types/node": "^22.13.17",
 		"tmp": "^0.2.3",
 		"ts-node": "^10.9.2",

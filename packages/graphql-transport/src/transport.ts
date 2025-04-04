@@ -6,8 +6,8 @@ import type {
 	SuiTransport,
 	SuiTransportRequestOptions,
 	SuiTransportSubscribeOptions,
-} from '@mysten/sui/client';
-import { SuiHTTPTransport } from '@mysten/sui/client';
+} from '@onelabs/sui/client';
+import { SuiHTTPTransport } from '@onelabs/sui/client';
 import type { DocumentNode } from 'graphql';
 import { print } from 'graphql';
 

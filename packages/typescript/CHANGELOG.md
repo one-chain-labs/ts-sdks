@@ -1,4 +1,4 @@
-# @mysten/sui.js
+# @onelabs/sui.js
 
 ## 1.26.1
 
@@ -7,7 +7,7 @@
 - 7ba32a4: update dependencies
 - Updated dependencies [7ba32a4]
 - Updated dependencies [c3a788c]
-  - @mysten/bcs@1.6.0
+  - @onelabs/bcs@1.6.0
 
 ## 1.26.0
 
@@ -46,21 +46,21 @@
 ### Patch Changes
 
 - Updated dependencies [03975f4]
-  - @mysten/bcs@1.5.0
+  - @onelabs/bcs@1.5.0
 
 ## 1.21.2
 
 ### Patch Changes
 
 - Updated dependencies [95b1ea5]
-  - @mysten/bcs@1.4.0
+  - @onelabs/bcs@1.4.0
 
 ## 1.21.1
 
 ### Patch Changes
 
 - Updated dependencies [10e2724]
-  - @mysten/bcs@1.3.0
+  - @onelabs/bcs@1.3.0
 
 ## 1.21.0
 
@@ -82,7 +82,7 @@
 
 ### Minor Changes
 
-- 539168a: expose isArgument util from @mysten/sui/transactions
+- 539168a: expose isArgument util from @onelabs/sui/transactions
 
 ### Patch Changes
 
@@ -94,7 +94,7 @@
 
 - 7abd243: Update repo links
 - Updated dependencies [7abd243]
-  - @mysten/bcs@1.2.1
+  - @onelabs/bcs@1.2.1
 
 ## 1.18.0
 
@@ -131,16 +131,16 @@
 ### Patch Changes
 
 - Updated dependencies [ad24b95]
-  - @mysten/bcs@1.2.0
+  - @onelabs/bcs@1.2.0
 
 ## 1.16.0
 
 ### Minor Changes
 
 - ec2dc7f: Add legacyAddress flag to zklogin methods that generate addresses
-- ec2dc7f: All functionality from `@mysten/zklogin` has been moved to `@mysten/sui/zklogin`
+- ec2dc7f: All functionality from `@onelabs/zklogin` has been moved to `@onelabs/sui/zklogin`
 
-  For most methods, simply replace the `@mysten/zklogin` import with `@mysten/sui/zklogin`
+  For most methods, simply replace the `@onelabs/zklogin` import with `@onelabs/sui/zklogin`
 
   2 Methods require one small additional change:
 
@@ -148,8 +148,8 @@
   true for backwards compatibility:
 
   ```diff
-  - import { computeZkLoginAddress, jwtToAddress } from '@mysten/zklogin';
-  + import { computeZkLoginAddress, jwtToAddress } from '@mysten/sui/zklogin';
+  - import { computeZkLoginAddress, jwtToAddress } from '@onelabs/zklogin';
+  + import { computeZkLoginAddress, jwtToAddress } from '@onelabs/sui/zklogin';
 
     const address = jwtToAddress(
      jwtAsString,
@@ -171,7 +171,7 @@
 ### Patch Changes
 
 - Updated dependencies [1dd7713]
-  - @mysten/bcs@1.1.1
+  - @onelabs/bcs@1.1.1
 
 ## 1.15.0
 
@@ -245,7 +245,7 @@
 ### Patch Changes
 
 - Updated dependencies [489f421]
-  - @mysten/bcs@1.1.0
+  - @onelabs/bcs@1.1.0
 
 ## 1.10.0
 
@@ -303,7 +303,7 @@
 
 - f37b3c2: Add PerEpochConfig and Cancelled to UnchangedSharedKind
 - Updated dependencies [f37b3c2]
-  - @mysten/bcs@1.0.4
+  - @onelabs/bcs@1.0.4
 
 ## 1.4.0
 
@@ -333,7 +333,7 @@
 - 0f27a97: Update dependencies
 - Updated dependencies [7fc464a]
 - Updated dependencies [0f27a97]
-  - @mysten/bcs@1.0.3
+  - @onelabs/bcs@1.0.3
 
 ## 1.2.1
 
@@ -374,7 +374,7 @@
 
 - 369b924343: Fix serializing bcs<u8> inputs from pure strings in v1 json
 - Updated dependencies [369b924343]
-  - @mysten/bcs@1.0.2
+  - @onelabs/bcs@1.0.2
 
 ## 1.0.4
 
@@ -382,7 +382,7 @@
 
 - f1e828f557: Export types needed for defining Transaction plugins
 - Updated dependencies [f1e828f557]
-  - @mysten/bcs@1.0.1
+  - @onelabs/bcs@1.0.1
 
 ## 1.0.3
 
@@ -406,7 +406,7 @@
 
 ### Major Changes
 
-- a92b03de42: The Typescript SDK has been renamed to `@mysten/sui` and includes many new features
+- a92b03de42: The Typescript SDK has been renamed to `@onelabs/sui` and includes many new features
   and breaking changes. See the
   [full migration guide](https://sdk.mystenlabs.com/typescript/migrations/sui-1.0) for details on
   how to upgrade.
@@ -415,7 +415,7 @@
 
 - ebdfe7cf21: Add support for more JSON RPC error codes
 - Updated dependencies [a92b03de42]
-  - @mysten/bcs@1.0.0
+  - @onelabs/bcs@1.0.0
 
 ## 0.54.1
 
@@ -470,7 +470,7 @@
 
 - 4830361fa4: Updated typescript version
 - Updated dependencies [4830361fa4]
-  - @mysten/bcs@0.11.1
+  - @onelabs/bcs@0.11.1
 
 ## 0.50.0
 
@@ -487,7 +487,7 @@
 - 13e922d9b1: Fix multiple shared objects not respecting mutable correctly
 - 220a766d86: Fix WebSocket constructor not being properly assigned in SuiClient HTTP transport
 - Updated dependencies [bae8802fe3]
-  - @mysten/bcs@0.11.0
+  - @onelabs/bcs@0.11.0
 
 ## 0.49.1
 
@@ -495,7 +495,7 @@
 
 - 9ac0a4ec01: Add extensions to all sdk import paths
 - Updated dependencies [9ac0a4ec01]
-  - @mysten/bcs@0.10.1
+  - @onelabs/bcs@0.10.1
 
 ## 0.49.0
 
@@ -506,7 +506,7 @@
 ### Patch Changes
 
 - Updated dependencies [e5f9e3ba21]
-  - @mysten/bcs@0.10.0
+  - @onelabs/bcs@0.10.0
 
 ## 0.48.1
 
@@ -514,7 +514,7 @@
 
 - dd362ec1d6: Update docs url to sdk.mystenlabs.com
 - Updated dependencies [dd362ec1d6]
-  - @mysten/bcs@0.9.1
+  - @onelabs/bcs@0.9.1
 
 ## 0.48.0
 
@@ -525,7 +525,7 @@
 ### Patch Changes
 
 - Updated dependencies [fce0a08d0f]
-  - @mysten/bcs@0.9.0
+  - @onelabs/bcs@0.9.0
 
 ## 0.47.0
 
@@ -541,7 +541,7 @@
   SuiHTTPTransport (eg, using the `ws` package)
 
   ```typescript
-  import { getFullnodeUrl, SuiClient, SuiHTTPTransport } from '@mysten/sui.js/client';
+  import { getFullnodeUrl, SuiClient, SuiHTTPTransport } from '@onelabs/sui.js/client';
   import { WebSocket } from 'ws';
 
   new SuiClient({
@@ -603,7 +603,7 @@
 
 - b48289346: Mark packages as being side-effect free.
 - Updated dependencies [b48289346]
-  - @mysten/bcs@0.8.1
+  - @onelabs/bcs@0.8.1
 
 ## 0.43.3
 
@@ -654,20 +654,20 @@
 
 - Updated dependencies [1bc430161]
 - Updated dependencies [e4484852b]
-  - @mysten/bcs@0.8.0
+  - @onelabs/bcs@0.8.0
 
 ## 0.42.0
 
 ### Minor Changes
 
-- fd8589806: Remove all previously deprecated exports from @mysten/sui.js
+- fd8589806: Remove all previously deprecated exports from @onelabs/sui.js
 
 ## 0.41.2
 
 ### Patch Changes
 
 - Updated dependencies [290c8e640]
-  - @mysten/bcs@0.7.4
+  - @onelabs/bcs@0.7.4
 
 ## 0.41.1
 
@@ -679,7 +679,7 @@
 
 ### Minor Changes
 
-- ba8e3b857: Rename TransactionBlock generated type in @mysten/sui.js/client to SuiTransactionBlock
+- ba8e3b857: Rename TransactionBlock generated type in @onelabs/sui.js/client to SuiTransactionBlock
   to avoid conflicting names in exports
 
 ### Patch Changes
@@ -690,7 +690,7 @@
 
 ### Minor Changes
 
-- a503cad34: Add exports to `@mysten/sui.js/client` for rpc method params
+- a503cad34: Add exports to `@onelabs/sui.js/client` for rpc method params
 
 ### Patch Changes
 
@@ -716,15 +716,15 @@
 - cc6441f46: The Sui TS SDK has been broken up into a set of modular exports, and all exports from
   the root of the package have been deprecated. The following export paths have been added:
 
-  - `@mysten/sui.js/client` - A client for interacting with Sui RPC nodes.
-  - `@mysten/sui.js/bcs` - A BCS builder with pre-defined types for Sui.
-  - `@mysten/sui.js/transaction` - Utilities for building and interacting with transactions.
-  - `@mysten/sui.js/keypairs/*` - Modular exports for specific KeyPair implementations.
-  - `@mysten/sui.js/verify` - Methods for verifying transactions and messages.
-  - `@mysten/sui.js/cryptography` - Shared types and classes for cryptography.
-  - `@mysten/sui.js/multisig` - Utilities for working with multisig signatures.
-  - `@mysten/sui.js/utils` - Utilities for formatting and parsing various Sui types.
-  - `@mysten/sui.js/faucet`- Methods for requesting sui from a faucet.
+  - `@onelabs/sui.js/client` - A client for interacting with Sui RPC nodes.
+  - `@onelabs/sui.js/bcs` - A BCS builder with pre-defined types for Sui.
+  - `@onelabs/sui.js/transaction` - Utilities for building and interacting with transactions.
+  - `@onelabs/sui.js/keypairs/*` - Modular exports for specific KeyPair implementations.
+  - `@onelabs/sui.js/verify` - Methods for verifying transactions and messages.
+  - `@onelabs/sui.js/cryptography` - Shared types and classes for cryptography.
+  - `@onelabs/sui.js/multisig` - Utilities for working with multisig signatures.
+  - `@onelabs/sui.js/utils` - Utilities for formatting and parsing various Sui types.
+  - `@onelabs/sui.js/faucet`- Methods for requesting sui from a faucet.
 
   As part of this refactor we are deprecating a number of existing APIs:
 
@@ -733,7 +733,7 @@
     Signing in verifying has been moved to the KeyPair classes, and the
     `signAndExecuteTransactionBlock` method has been moved to the new `SuiClient`.
   - The `superstruct` type definitions for types used by JsonRPCProvider are being replaced with
-    generated types exported from `@mysten/sui.js/client`. The new type definitions are pure
+    generated types exported from `@onelabs/sui.js/client`. The new type definitions are pure
     typescript types and can't be used for runtime validation. By generating these as types, it will
     be easier to keep them in sync with the RPC definitions and avoid discrepancies between the type
     definitions in the SDK and the data returned by RPC methods.
@@ -763,8 +763,8 @@
   provider.
 
   ```diff
-  - import { JsonRpcProvider, devnetConnection } from '@mysten/sui.js';
-  + import { SuiClient, getFullnodeUrl } from '@mysten/sui.js/client';
+  - import { JsonRpcProvider, devnetConnection } from '@onelabs/sui.js';
+  + import { SuiClient, getFullnodeUrl } from '@onelabs/sui.js/client';
 
   - const provider = new JsonRpcProvider(localnetConnection);
   + const client = new SuiClient({ url: getFullnodeUrl('localnet')});
@@ -782,10 +782,10 @@
   -    RawSigner,
   -    TransactionBlock,
   -    localnetConnection,
-  - } from '@mysten/sui.js';
-  + import { Ed25519Keypair } from '@mysten/sui.js/keypairs/ed25519';
-  + import { SuiClient, getFullnodeUrl } from '@mysten/sui.js/client';
-  + import { TransactionBlock } from '@mysten/sui.js/transactions';
+  - } from '@onelabs/sui.js';
+  + import { Ed25519Keypair } from '@onelabs/sui.js/keypairs/ed25519';
+  + import { SuiClient, getFullnodeUrl } from '@onelabs/sui.js/client';
+  + import { TransactionBlock } from '@onelabs/sui.js/transactions';
 
     const keypair = new Ed25519Keypair()
   - const provider = new JsonRpcProvider(localnetConnection);
@@ -803,12 +803,12 @@
   #### Migrating faucet requests
 
   The ability to request Sui from a faucet was not added to `SuiClient`, instead you will need to
-  use a method `@mysten/sui.js/faucet` to make these requests
+  use a method `@onelabs/sui.js/faucet` to make these requests
 
   ```diff
-  - import { JsonRpcProvider, devnetConnection } from '@mysten/sui.js';
+  - import { JsonRpcProvider, devnetConnection } from '@onelabs/sui.js';
   - const provider = new JsonRpcProvider(devnetConnection);
-  + import { requestSuiFromFaucetV0, getFaucetHost } from '@mysten/sui.js/faucet';
+  + import { requestSuiFromFaucetV0, getFaucetHost } from '@onelabs/sui.js/faucet';
 
   - await provider.requestSuiFromFaucet(
   -  '<YOUR SUI ADDRESS>'
@@ -819,7 +819,7 @@
   +});
   ```
 
-- 001148443: Introduce new `@mysten/sui.js/faucet` export, which should be used for all faucet
+- 001148443: Introduce new `@onelabs/sui.js/faucet` export, which should be used for all faucet
   interactions. This deprecates the previous `requestSuiFromFaucet` APIs that existed on the
   `JsonRpcProvider` and `Signer` classes.
 
@@ -852,7 +852,7 @@
 - 2f37537d5: Update `SuiEventFilter` structure for `TimeRange` query.
 - 00484bcc3: add method to create Ed25519Keypair from a mnemonic seed
 - Updated dependencies [36f2edff3]
-  - @mysten/bcs@0.7.3
+  - @onelabs/bcs@0.7.3
 
 ## 0.36.0
 
@@ -872,7 +872,7 @@
 - 1cfb1c9da3: Added `getProtocolConfig()` method to the provider.
 - Updated dependencies [ca5c72815d]
 - Updated dependencies [fdb569464e]
-  - @mysten/bcs@0.7.2
+  - @onelabs/bcs@0.7.2
 
 ## 0.35.1
 
@@ -949,7 +949,7 @@
   API.
 - b4f0bfc76: Fix type definitions for package exports.
 - Updated dependencies [b4f0bfc76]
-  - @mysten/bcs@0.7.1
+  - @onelabs/bcs@0.7.1
 
 ## 0.32.1
 
@@ -1097,7 +1097,7 @@
 - Updated dependencies [a0955c479]
 - Updated dependencies [0a7b42a6d]
 - Updated dependencies [77bdf907f]
-  - @mysten/bcs@0.7.0
+  - @onelabs/bcs@0.7.0
 
 ## 0.29.1
 
@@ -1122,7 +1122,7 @@
 - 0e202a543: Remove pending delegation switches.
 - 67e503c7c: Move base58 libraries to BCS
 - Updated dependencies [0e202a543]
-  - @mysten/bcs@0.6.1
+  - @onelabs/bcs@0.6.1
 
 ## 0.28.0
 
@@ -1142,7 +1142,7 @@
 
 - 24bdb66c6: Include client type and version in RPC client request headers
 - Updated dependencies [598f106ef]
-  - @mysten/bcs@0.6.0
+  - @onelabs/bcs@0.6.0
 
 ## 0.27.0
 
@@ -1320,7 +1320,7 @@
 ### Patch Changes
 
 - Updated dependencies [1a0968636]
-  - @mysten/bcs@0.5.0
+  - @onelabs/bcs@0.5.0
 
 ## 0.15.0
 
@@ -1335,7 +1335,7 @@
 - c27933292: Add constants for default API endpoints
 - Updated dependencies [1591726e8]
 - Updated dependencies [1591726e8]
-  - @mysten/bcs@0.4.0
+  - @onelabs/bcs@0.4.0
 
 ## 0.14.0
 
@@ -1389,7 +1389,7 @@
 ### Patch Changes
 
 - Updated dependencies [d343b67e]
-  - @mysten/bcs@0.3.0
+  - @onelabs/bcs@0.3.0
 
 ## 0.11.0-pre
 
@@ -1405,4 +1405,4 @@
 - e2aa08e9: Fix missing built files for packages.
 - Updated dependencies [c5e4851b]
 - Updated dependencies [e2aa08e9]
-  - @mysten/bcs@0.2.1
+  - @onelabs/bcs@0.2.1

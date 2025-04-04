@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromBase64 } from '@mysten/bcs';
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
+import { fromBase64 } from '@onelabs/bcs';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { GeneralError } from '../../src/error.js';
@@ -23,7 +23,7 @@ const name = 'mysten-testnet-1';
 
 describe('key-server tests', () => {
 	beforeEach(() => {
-		vi.mock('@mysten/sui.js', () => ({
+		vi.mock('@onelabs/sui.js', () => ({
 			SuiClient: vi.fn(() => ({
 				getObject: vi.fn().mockResolvedValue({
 					data: {

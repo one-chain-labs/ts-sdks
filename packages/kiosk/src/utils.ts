@@ -9,13 +9,13 @@ import type {
 	SuiObjectDataFilter,
 	SuiObjectDataOptions,
 	SuiObjectResponse,
-} from '@mysten/sui/client';
+} from '@onelabs/sui/client';
 import {
 	fromBase64,
 	normalizeStructTag,
 	normalizeSuiAddress,
 	parseStructTag,
-} from '@mysten/sui/utils';
+} from '@onelabs/sui/utils';
 
 import { KioskType } from './bcs.js';
 import type { Kiosk, KioskData, KioskListing, TransferPolicyCap } from './types/index.js';

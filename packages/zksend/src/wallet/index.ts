@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { Transaction } from '@mysten/sui/transactions';
-import { toBase64 } from '@mysten/sui/utils';
+import { Transaction } from '@onelabs/sui/transactions';
+import { toBase64 } from '@onelabs/sui/utils';
 import type {
 	StandardConnectFeature,
 	StandardConnectMethod,
@@ -18,8 +18,8 @@ import type {
 	SuiSignTransactionFeature,
 	SuiSignTransactionMethod,
 	Wallet,
-} from '@mysten/wallet-standard';
-import { getWallets, ReadonlyWalletAccount } from '@mysten/wallet-standard';
+} from '@onelabs/wallet-standard';
+import { getWallets, ReadonlyWalletAccount } from '@onelabs/wallet-standard';
 import type { Emitter } from 'mitt';
 import mitt from 'mitt';
 

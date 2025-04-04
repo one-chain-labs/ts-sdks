@@ -1,9 +1,9 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { SuiClient } from '@mysten/sui/client';
-import { Transaction } from '@mysten/sui/transactions';
-import { fromBase64, toBase64 } from '@mysten/sui/utils';
+import type { SuiClient } from '@onelabs/sui/client';
+import { Transaction } from '@onelabs/sui/transactions';
+import { fromBase64, toBase64 } from '@onelabs/sui/utils';
 import type {
 	IdentifierArray,
 	IdentifierString,
@@ -20,8 +20,8 @@ import type {
 	SuiSignTransactionFeature,
 	SuiSignTransactionMethod,
 	Wallet,
-} from '@mysten/wallet-standard';
-import { getWallets, ReadonlyWalletAccount } from '@mysten/wallet-standard';
+} from '@onelabs/wallet-standard';
+import { getWallets, ReadonlyWalletAccount } from '@onelabs/wallet-standard';
 import type { Emitter } from 'mitt';
 import mitt from 'mitt';
 
@@ -286,7 +286,7 @@ export class EnokiWallet implements Wallet {
 	#validateChain(chain?: IdentifierString): asserts chain is (typeof this.chains)[number] {
 		if (!chain || !this.chains.includes(chain as (typeof this.chains)[number])) {
 			throw new Error(
-				`A valid Sui chain identifier was not provided in the request. Please report this issue to the dApp developer. Examples of valid Sui chain identifiers are 'sui:testnet' and 'sui:mainnet'. Consider using the '@mysten/dapp-kit' package, which provides this value automatically.`,
+				`A valid Sui chain identifier was not provided in the request. Please report this issue to the dApp developer. Examples of valid Sui chain identifiers are 'sui:testnet' and 'sui:mainnet'. Consider using the '@onelabs/dapp-kit' package, which provides this value automatically.`,
 			);
 		}
 	}

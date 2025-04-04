@@ -6,7 +6,7 @@ import type {
 	StandardConnectOutput,
 	WalletAccount,
 	WalletWithRequiredFeatures,
-} from '@mysten/wallet-standard';
+} from '@onelabs/wallet-standard';
 import type { UseMutationOptions, UseMutationResult } from '@tanstack/react-query';
 import { useMutation } from '@tanstack/react-query';
 

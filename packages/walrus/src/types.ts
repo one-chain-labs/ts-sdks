@@ -1,9 +1,9 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { SuiClient } from '@mysten/sui/client';
-import type { Signer } from '@mysten/sui/cryptography';
-import type { TransactionObjectArgument } from '@mysten/sui/transactions';
+import type { SuiClient } from '@onelabs/sui/client';
+import type { Signer } from '@onelabs/sui/cryptography';
+import type { TransactionObjectArgument } from '@onelabs/sui/transactions';
 
 import type { StorageNodeInfo } from './contracts/storage_node.js';
 import type { RequestOptions, StorageNodeClientOptions } from './storage-node/client.js';

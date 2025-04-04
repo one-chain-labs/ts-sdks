@@ -1,5 +1,5 @@
-import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
-import { isValidSuiObjectId } from "@mysten/sui/utils";
+import { ConnectButton, useCurrentAccount } from "@onelabs/dapp-kit";
+import { isValidSuiObjectId } from "@onelabs/sui/utils";
 import { Box, Container, Flex, Heading } from "@radix-ui/themes";
 import { useState } from "react";
 import { Counter } from "./Counter";

@@ -92,7 +92,7 @@
 
 ### Major Changes
 
-- a92b03de42: The Typescript SDK has been renamed to `@mysten/sui` and includes many new features
+- a92b03de42: The Typescript SDK has been renamed to `@onelabs/sui` and includes many new features
   and breaking changes. See the
   [full migration guide](https://sdk.mystenlabs.com/typescript/migrations/sui-1.0) for details on
   how to upgrade.

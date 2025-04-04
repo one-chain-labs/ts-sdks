@@ -1,18 +1,18 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { bcs } from '@mysten/sui/bcs';
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
+import { bcs } from '@onelabs/sui/bcs';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
 import type {
 	CoinStruct,
 	SuiObjectData,
 	SuiTransaction,
 	SuiTransactionBlockResponse,
-} from '@mysten/sui/client';
-import type { Keypair } from '@mysten/sui/cryptography';
-import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
-import type { TransactionObjectArgument } from '@mysten/sui/transactions';
-import { Transaction } from '@mysten/sui/transactions';
+} from '@onelabs/sui/client';
+import type { Keypair } from '@onelabs/sui/cryptography';
+import { Ed25519Keypair } from '@onelabs/sui/keypairs/ed25519';
+import type { TransactionObjectArgument } from '@onelabs/sui/transactions';
+import { Transaction } from '@onelabs/sui/transactions';
 import {
 	fromBase64,
 	normalizeStructTag,
@@ -21,7 +21,7 @@ import {
 	parseStructTag,
 	SUI_TYPE_ARG,
 	toBase64,
-} from '@mysten/sui/utils';
+} from '@onelabs/sui/utils';
 
 import type { ZkSendLinkBuilderOptions } from './builder.js';
 import { ZkSendLinkBuilder } from './builder.js';
@@ -37,7 +37,7 @@ const DEFAULT_ZK_SEND_LINK_OPTIONS = {
 };
 
 const SUI_COIN_TYPE = normalizeStructTag(SUI_TYPE_ARG);
-const SUI_COIN_OBJECT_TYPE = normalizeStructTag('0x2::coin::Coin<0x2::sui::SUI>');
+const SUI_COIN_OBJECT_TYPE = normalizeStructTag('0x2::coin::Coin<0x2::oct::OCT>');
 
 export type ZkSendLinkOptions = {
 	claimApi?: string;

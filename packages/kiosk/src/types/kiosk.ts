@@ -5,8 +5,8 @@ import type {
 	PaginatedObjectsResponse,
 	SuiObjectData,
 	SuiObjectDataOptions,
-} from '@mysten/sui/client';
-import type { TransactionArgument } from '@mysten/sui/transactions';
+} from '@onelabs/sui/client';
+import type { TransactionArgument } from '@onelabs/sui/transactions';
 
 import type { ObjectArgument } from './index.js';
 

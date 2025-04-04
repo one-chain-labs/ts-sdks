@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromHex, toHex } from '@mysten/bcs';
-import { isValidSuiObjectId } from '@mysten/sui/utils';
+import { fromHex, toHex } from '@onelabs/bcs';
+import { isValidSuiObjectId } from '@onelabs/sui/utils';
 
 import { UserError } from './error.js';
 

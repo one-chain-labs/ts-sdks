@@ -8,8 +8,8 @@ import {
 	useSignAndExecuteTransaction,
 	useSuiClientContext,
 	useWallets,
-} from '@mysten/dapp-kit';
-import { Transaction } from '@mysten/sui/transactions';
+} from '@onelabs/dapp-kit';
+import { Transaction } from '@onelabs/sui/transactions';
 import { useState } from 'react';
 
 import { isEnokiWallet } from '../src/wallet/index.js';

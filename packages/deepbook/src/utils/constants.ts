@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { normalizeStructTag, SUI_TYPE_ARG } from '@mysten/sui/utils';
+import { normalizeStructTag, SUI_TYPE_ARG } from '@onelabs/sui/utils';
 
 export const PACKAGE_ID = '0xdee9';
 

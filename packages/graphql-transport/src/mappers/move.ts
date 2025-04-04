@@ -10,8 +10,8 @@ import type {
 	SuiMoveNormalizedModule,
 	SuiMoveNormalizedStruct,
 	SuiMoveNormalizedType,
-} from '@mysten/sui/client';
-import { normalizeSuiAddress, parseStructTag } from '@mysten/sui/utils';
+} from '@onelabs/sui/client';
+import { normalizeSuiAddress, parseStructTag } from '@onelabs/sui/utils';
 
 import type {
 	Rpc_Move_Enum_FieldsFragment,

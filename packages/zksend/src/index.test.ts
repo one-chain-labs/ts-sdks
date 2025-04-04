@@ -2,12 +2,12 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { describe } from 'node:test';
-import { getFullnodeUrl, SuiClient, SuiObjectChange } from '@mysten/sui/client';
-import { decodeSuiPrivateKey, Keypair } from '@mysten/sui/cryptography';
-import { getFaucetHost, requestSuiFromFaucetV0 } from '@mysten/sui/faucet';
-import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
-import { Transaction } from '@mysten/sui/transactions';
-import { MIST_PER_SUI, toBase64 } from '@mysten/sui/utils';
+import { getFullnodeUrl, SuiClient, SuiObjectChange } from '@onelabs/sui/client';
+import { decodeSuiPrivateKey, Keypair } from '@onelabs/sui/cryptography';
+import { getFaucetHost, requestSuiFromFaucetV0 } from '@onelabs/sui/faucet';
+import { Ed25519Keypair } from '@onelabs/sui/keypairs/ed25519';
+import { Transaction } from '@onelabs/sui/transactions';
+import { MIST_PER_SUI, toBase64 } from '@onelabs/sui/utils';
 import { beforeAll, expect, test } from 'vitest';
 
 import {
@@ -96,7 +96,7 @@ describe('Contract links', () => {
 				[
 				  {
 				    "amount": 100n,
-				    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+				    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT",
 				  },
 				]
 			`);
@@ -185,7 +185,7 @@ describe('Contract links', () => {
 				[
 				  {
 				    "amount": 100n,
-				    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+				    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT",
 				  },
 				]
 			`);
@@ -314,7 +314,7 @@ describe('Contract links', () => {
 					[
 					  {
 					    "amount": 100n,
-					    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+					    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT",
 					  },
 					]
 				`);
@@ -374,7 +374,7 @@ describe('Non contract links', () => {
 					[
 					  {
 					    "amount": 100n,
-					    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+					    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT",
 					  },
 					]
 				`);
@@ -430,7 +430,7 @@ describe('Non contract links', () => {
 		expect(claimLink.assets?.nfts.length).toEqual(0);
 		expect(claimLink.assets?.balances.length).toEqual(1);
 		expect(claimLink.assets?.balances[0].coinType).toEqual(
-			'0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI',
+			'0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT',
 		);
 
 		const claimTx = await claimLink.claimAssets(keypair.toSuiAddress());
@@ -534,7 +534,7 @@ describe('Non contract links', () => {
 				[
 				  {
 				    "amount": 100n,
-				    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+				    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT",
 				  },
 				]
 			`);
@@ -601,7 +601,7 @@ describe('Non contract links', () => {
 		expect(createdLinks.links[0].assets).toMatchObject({
 			balances: [
 				{
-					coinType: '0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI',
+					coinType: '0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT',
 					amount: 100n,
 				},
 			],
@@ -622,7 +622,7 @@ describe('Non contract links', () => {
 				[
 				  {
 				    "amount": 100n,
-				    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+				    "coinType": "0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT",
 				  },
 				]
 			`);

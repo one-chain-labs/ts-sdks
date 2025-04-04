@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { BcsType } from '@mysten/sui/bcs';
-import { bcs } from '@mysten/sui/bcs';
+import type { BcsType } from '@onelabs/sui/bcs';
+import { bcs } from '@onelabs/sui/bcs';
 
 const MerkleNode = bcs.enum('MerkleNode', {
 	Empty: null,

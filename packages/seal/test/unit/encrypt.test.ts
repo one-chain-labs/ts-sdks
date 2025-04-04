@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromHex, toHex } from '@mysten/bcs';
+import { fromHex, toHex } from '@onelabs/bcs';
 import { describe, expect, it } from 'vitest';
 
 import { EncryptedObject } from '../../src/bcs';

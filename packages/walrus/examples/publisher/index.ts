@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { serve } from '@hono/node-server';
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
 import { Hono } from 'hono';
 
 import { WalrusClient } from '../../src/index.js';

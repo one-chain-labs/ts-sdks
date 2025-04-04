@@ -1,11 +1,11 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { bcs } from '@mysten/sui/bcs';
-import type { SuiClient } from '@mysten/sui/client';
-import type { Transaction } from '@mysten/sui/transactions';
-import { coinWithBalance } from '@mysten/sui/transactions';
-import { fromBase64, fromHex, parseStructTag } from '@mysten/sui/utils';
+import { bcs } from '@onelabs/sui/bcs';
+import type { SuiClient } from '@onelabs/sui/client';
+import type { Transaction } from '@onelabs/sui/transactions';
+import { coinWithBalance } from '@onelabs/sui/transactions';
+import { fromBase64, fromHex, parseStructTag } from '@onelabs/sui/utils';
 
 import type { HexString } from './PriceServiceConnection.js';
 import { PriceServiceConnection } from './PriceServiceConnection.js';

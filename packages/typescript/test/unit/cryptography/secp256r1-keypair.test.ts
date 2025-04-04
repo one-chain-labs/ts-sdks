@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromBase64, toBase58, toBase64 } from '@mysten/bcs';
+import { fromBase64, toBase58, toBase64 } from '@onelabs/bcs';
 import { secp256r1 } from '@noble/curves/p256';
 import { sha256 } from '@noble/hashes/sha256';
 import { describe, expect, it } from 'vitest';

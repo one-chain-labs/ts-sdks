@@ -26,7 +26,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build Seal dependencies
-        run: pnpm turbo build --filter @mysten/seal   
+        run: pnpm turbo build --filter @onelabs/seal   
 
       - name: Run integration tests
-        run: pnpm --filter @mysten/seal test:unit
+        run: pnpm --filter @onelabs/seal test:unit

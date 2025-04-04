@@ -1,13 +1,13 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { toBase64 } from '@mysten/bcs';
-import { bcs } from '@mysten/sui/bcs';
-import type { Signer } from '@mysten/sui/cryptography';
-import { SuiGraphQLClient } from '@mysten/sui/graphql';
-import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
-import { isValidSuiAddress, isValidSuiObjectId } from '@mysten/sui/utils';
-import { verifyPersonalMessageSignature } from '@mysten/sui/verify';
+import { toBase64 } from '@onelabs/bcs';
+import { bcs } from '@onelabs/sui/bcs';
+import type { Signer } from '@onelabs/sui/cryptography';
+import { SuiGraphQLClient } from '@onelabs/sui/graphql';
+import { Ed25519Keypair } from '@onelabs/sui/keypairs/ed25519';
+import { isValidSuiAddress, isValidSuiObjectId } from '@onelabs/sui/utils';
+import { verifyPersonalMessageSignature } from '@onelabs/sui/verify';
 
 import { generateSecretKey, toPublicKey, toVerificationKey } from './elgamal.js';
 import {

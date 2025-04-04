@@ -3,9 +3,9 @@ import {
   useSignAndExecuteTransaction,
   useSuiClient,
   useSuiClientQuery,
-} from "@mysten/dapp-kit";
-import type { SuiObjectData } from "@mysten/sui/client";
-import { Transaction } from "@mysten/sui/transactions";
+} from "@onelabs/dapp-kit";
+import type { SuiObjectData } from "@onelabs/sui/client";
+import { Transaction } from "@onelabs/sui/transactions";
 import { Button, Flex, Heading, Text } from "@radix-ui/themes";
 import { useNetworkVariable } from "./networkConfig";
 import { useState } from "react";

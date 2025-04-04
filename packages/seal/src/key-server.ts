@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
-import { fromBase64, fromHex } from '@mysten/bcs';
-import type { SuiClient } from '@mysten/sui/client';
+import { fromBase64, fromHex } from '@onelabs/bcs';
+import type { SuiClient } from '@onelabs/sui/client';
 import { bls12_381 } from '@noble/curves/bls12-381';
 
 import { KeyServerMove } from './bcs.js';

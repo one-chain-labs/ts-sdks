@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { toBase64 } from '@mysten/sui/utils';
-import type { SuiReportTransactionEffectsInput } from '@mysten/wallet-standard';
+import { toBase64 } from '@onelabs/sui/utils';
+import type { SuiReportTransactionEffectsInput } from '@onelabs/wallet-standard';
 import type { UseMutationOptions, UseMutationResult } from '@tanstack/react-query';
 import { useMutation } from '@tanstack/react-query';
 

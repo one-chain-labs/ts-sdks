@@ -18,14 +18,14 @@ import {
 	useSwitchAccount,
 	useWallets,
 	WalletProvider,
-} from '@mysten/dapp-kit';
-import { getFullnodeUrl } from '@mysten/sui/client';
-import { Transaction } from '@mysten/sui/transactions';
+} from '@onelabs/dapp-kit';
+import { getFullnodeUrl } from '@onelabs/sui/client';
+import { Transaction } from '@onelabs/sui/transactions';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import type { ComponentProps } from 'react';
 import { useState } from 'react';
 
-import '@mysten/dapp-kit/dist/index.css';
+import '@onelabs/dapp-kit/dist/index.css';
 
 export const UseWalletsExample = withProviders(() => {
 	const wallets = useWallets();

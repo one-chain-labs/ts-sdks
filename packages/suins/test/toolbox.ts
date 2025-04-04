@@ -4,9 +4,9 @@ import { execSync } from 'child_process';
 import { mkdtemp } from 'fs/promises';
 import { tmpdir } from 'os';
 import path from 'path';
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
-import { FaucetRateLimitError, getFaucetHost, requestSuiFromFaucetV0 } from '@mysten/sui/faucet';
-import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
+import { FaucetRateLimitError, getFaucetHost, requestSuiFromFaucetV0 } from '@onelabs/sui/faucet';
+import { Ed25519Keypair } from '@onelabs/sui/keypairs/ed25519';
 import { retry } from 'ts-retry-promise';
 
 //@ts-ignore-next-line
@@ -43,7 +43,7 @@ export function getClient(): SuiClient {
 	});
 }
 
-// TODO: expose these testing utils from @mysten/sui
+// TODO: expose these testing utils from @onelabs/sui
 export async function setupSuiClient() {
 	const keypair = Ed25519Keypair.generate();
 	const address = keypair.getPublicKey().toSuiAddress();

@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { toHex } from '@mysten/bcs';
+import { toHex } from '@onelabs/bcs';
 import { blake2b } from '@noble/hashes/blake2b';
 
 import type { TypeTag } from '../bcs/bcs.js';

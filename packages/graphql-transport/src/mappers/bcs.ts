@@ -1,9 +1,9 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { toBase64 } from '@mysten/bcs';
-import type { BcsType } from '@mysten/bcs';
-import { bcs } from '@mysten/sui/bcs';
+import { toBase64 } from '@onelabs/bcs';
+import type { BcsType } from '@onelabs/bcs';
+import { bcs } from '@onelabs/sui/bcs';
 
 import type { MoveTypeLayout } from './move.js';
 import { toShortTypeString } from './util.js';

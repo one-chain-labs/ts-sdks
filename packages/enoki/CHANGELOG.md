@@ -1,4 +1,4 @@
-# @mysten/enoki
+# @onelabs/enoki
 
 ## 0.6.2
 
@@ -8,18 +8,18 @@
 - 4d7f04c: Add new EnokiClient methods
 - Updated dependencies [156ae13]
 - Updated dependencies [7ba32a4]
-  - @mysten/signers@0.2.0
-  - @mysten/wallet-standard@0.14.2
-  - @mysten/sui@1.26.1
+  - @onelabs/signers@0.2.0
+  - @onelabs/wallet-standard@0.14.2
+  - @onelabs/sui@1.26.1
 
 ## 0.6.1
 
 ### Patch Changes
 
 - Updated dependencies [906dd14]
-  - @mysten/sui@1.26.0
-  - @mysten/signers@0.1.17
-  - @mysten/wallet-standard@0.14.1
+  - @onelabs/sui@1.26.0
+  - @onelabs/signers@0.1.17
+  - @onelabs/wallet-standard@0.14.1
 
 ## 0.6.0
 
@@ -33,9 +33,9 @@
 - 132e67d: Clear the ephemeral keypair from IDB for the experimental web crypto signer
 - Updated dependencies [68a9ecd]
 - Updated dependencies [e8b5d04]
-  - @mysten/wallet-standard@0.14.0
-  - @mysten/sui@1.25.0
-  - @mysten/signers@0.1.16
+  - @onelabs/wallet-standard@0.14.0
+  - @onelabs/sui@1.25.0
+  - @onelabs/signers@0.1.16
 
 ## 0.5.3
 
@@ -43,7 +43,7 @@
 
 - 850369a: Add experimental support for WebCrypto signer
 - Updated dependencies [850369a]
-  - @mysten/signers@0.1.15
+  - @onelabs/signers@0.1.15
 
 ## 0.5.2
 
@@ -57,7 +57,7 @@
 ### Patch Changes
 
 - Updated dependencies [cf3d12d]
-  - @mysten/sui@1.24.0
+  - @onelabs/sui@1.24.0
 
 ## 0.5.0
 
@@ -70,26 +70,26 @@
 
 - Updated dependencies [8baac61]
 - Updated dependencies [8baac61]
-  - @mysten/sui@1.23.0
+  - @onelabs/sui@1.23.0
 
 ## 0.4.26
 
 ### Patch Changes
 
 - Updated dependencies [03975f4]
-  - @mysten/sui@1.22.0
+  - @onelabs/sui@1.22.0
 
 ## 0.4.25
 
 ### Patch Changes
 
-- @mysten/sui@1.21.2
+- @onelabs/sui@1.21.2
 
 ## 0.4.24
 
 ### Patch Changes
 
-- @mysten/sui@1.21.1
+- @onelabs/sui@1.21.1
 
 ## 0.4.23
 
@@ -97,14 +97,14 @@
 
 - Updated dependencies [3d8a0d9]
 - Updated dependencies [20a5aaa]
-  - @mysten/sui@1.21.0
+  - @onelabs/sui@1.21.0
 
 ## 0.4.22
 
 ### Patch Changes
 
 - Updated dependencies [827a200]
-  - @mysten/sui@1.20.0
+  - @onelabs/sui@1.20.0
 
 ## 0.4.21
 
@@ -112,7 +112,7 @@
 
 - Updated dependencies [c39f32f]
 - Updated dependencies [539168a]
-  - @mysten/sui@1.19.0
+  - @onelabs/sui@1.19.0
 
 ## 0.4.20
 
@@ -120,7 +120,7 @@
 
 - 7abd243: Update repo links
 - Updated dependencies [7abd243]
-  - @mysten/sui@1.18.1
+  - @onelabs/sui@1.18.1
 
 ## 0.4.19
 
@@ -133,34 +133,34 @@
 - Updated dependencies [dc0e21e]
 - Updated dependencies [85bd9e4]
 - Updated dependencies [a872b97]
-  - @mysten/sui@1.18.0
+  - @onelabs/sui@1.18.0
 
 ## 0.4.18
 
 ### Patch Changes
 
 - Updated dependencies [20af12d]
-  - @mysten/sui@1.17.0
+  - @onelabs/sui@1.17.0
 
 ## 0.4.17
 
 ### Patch Changes
 
 - Updated dependencies [100207f]
-  - @mysten/sui@1.16.2
+  - @onelabs/sui@1.16.2
 
 ## 0.4.16
 
 ### Patch Changes
 
-- 69ee5cc: remove @mysten/zklogin dependency
+- 69ee5cc: remove @onelabs/zklogin dependency
 
 ## 0.4.15
 
 ### Patch Changes
 
-- @mysten/sui@1.16.1
-- @mysten/zklogin@0.8.1
+- @onelabs/sui@1.16.1
+- @onelabs/zklogin@0.8.1
 
 ## 0.4.14
 
@@ -168,71 +168,71 @@
 
 - Updated dependencies [ec2dc7f]
 - Updated dependencies [ec2dc7f]
-  - @mysten/sui@1.16.0
-  - @mysten/zklogin@0.8.0
+  - @onelabs/sui@1.16.0
+  - @onelabs/zklogin@0.8.0
 
 ## 0.4.13
 
 ### Patch Changes
 
-- @mysten/sui@1.15.1
-- @mysten/zklogin@0.7.30
+- @onelabs/sui@1.15.1
+- @onelabs/zklogin@0.7.30
 
 ## 0.4.12
 
 ### Patch Changes
 
 - Updated dependencies [6460e45]
-  - @mysten/sui@1.15.0
-  - @mysten/zklogin@0.7.29
+  - @onelabs/sui@1.15.0
+  - @onelabs/zklogin@0.7.29
 
 ## 0.4.11
 
 ### Patch Changes
 
 - Updated dependencies [938fb6e]
-  - @mysten/sui@1.14.4
-  - @mysten/zklogin@0.7.28
+  - @onelabs/sui@1.14.4
+  - @onelabs/zklogin@0.7.28
 
 ## 0.4.10
 
 ### Patch Changes
 
 - Updated dependencies [d5a23d7]
-  - @mysten/sui@1.14.3
-  - @mysten/zklogin@0.7.27
+  - @onelabs/sui@1.14.3
+  - @onelabs/zklogin@0.7.27
 
 ## 0.4.9
 
 ### Patch Changes
 
 - Updated dependencies [e7bc63e]
-  - @mysten/sui@1.14.2
-  - @mysten/zklogin@0.7.26
+  - @onelabs/sui@1.14.2
+  - @onelabs/zklogin@0.7.26
 
 ## 0.4.8
 
 ### Patch Changes
 
 - Updated dependencies [69ef100]
-  - @mysten/sui@1.14.1
-  - @mysten/zklogin@0.7.25
+  - @onelabs/sui@1.14.1
+  - @onelabs/zklogin@0.7.25
 
 ## 0.4.7
 
 ### Patch Changes
 
 - Updated dependencies [c24814b]
-  - @mysten/sui@1.14.0
-  - @mysten/zklogin@0.7.24
+  - @onelabs/sui@1.14.0
+  - @onelabs/zklogin@0.7.24
 
 ## 0.4.6
 
 ### Patch Changes
 
 - Updated dependencies [477d2a4]
-  - @mysten/sui@1.13.0
-  - @mysten/zklogin@0.7.23
+  - @onelabs/sui@1.13.0
+  - @onelabs/zklogin@0.7.23
 
 ## 0.4.5
 
@@ -240,8 +240,8 @@
 
 - Updated dependencies [5436a90]
 - Updated dependencies [5436a90]
-  - @mysten/sui@1.12.0
-  - @mysten/zklogin@0.7.22
+  - @onelabs/sui@1.12.0
+  - @onelabs/zklogin@0.7.22
 
 ## 0.4.4
 
@@ -249,16 +249,16 @@
 
 - Updated dependencies [489f421]
 - Updated dependencies [489f421]
-  - @mysten/sui@1.11.0
-  - @mysten/zklogin@0.7.21
+  - @onelabs/sui@1.11.0
+  - @onelabs/zklogin@0.7.21
 
 ## 0.4.3
 
 ### Patch Changes
 
 - Updated dependencies [830b8d8]
-  - @mysten/sui@1.10.0
-  - @mysten/zklogin@0.7.20
+  - @onelabs/sui@1.10.0
+  - @onelabs/zklogin@0.7.20
 
 ## 0.4.2
 
@@ -266,16 +266,16 @@
 
 - Updated dependencies [2c96b06]
 - Updated dependencies [1fd22cc]
-  - @mysten/sui@1.9.0
-  - @mysten/zklogin@0.7.19
+  - @onelabs/sui@1.9.0
+  - @onelabs/zklogin@0.7.19
 
 ## 0.4.1
 
 ### Patch Changes
 
 - Updated dependencies [569511a]
-  - @mysten/sui@1.8.0
-  - @mysten/zklogin@0.7.18
+  - @onelabs/sui@1.8.0
+  - @onelabs/zklogin@0.7.18
 
 ## 0.4.0
 
@@ -292,23 +292,23 @@
 - Updated dependencies [4019dd7]
 - Updated dependencies [4019dd7]
 - Updated dependencies [00a974d]
-  - @mysten/sui@1.7.0
-  - @mysten/zklogin@0.7.17
+  - @onelabs/sui@1.7.0
+  - @onelabs/zklogin@0.7.17
 
 ## 0.3.16
 
 ### Patch Changes
 
 - Updated dependencies [a3e32fe]
-  - @mysten/sui@1.6.0
-  - @mysten/zklogin@0.7.16
+  - @onelabs/sui@1.6.0
+  - @onelabs/zklogin@0.7.16
 
 ## 0.3.15
 
 ### Patch Changes
 
 - Updated dependencies [6f79ed9]
-  - @mysten/zklogin@0.7.15
+  - @onelabs/zklogin@0.7.15
 
 ## 0.3.14
 
@@ -316,24 +316,24 @@
 
 - Updated dependencies [0851b31]
 - Updated dependencies [f37b3c2]
-  - @mysten/sui@1.5.0
-  - @mysten/zklogin@0.7.14
+  - @onelabs/sui@1.5.0
+  - @onelabs/zklogin@0.7.14
 
 ## 0.3.13
 
 ### Patch Changes
 
 - Updated dependencies [4419234]
-  - @mysten/sui@1.4.0
-  - @mysten/zklogin@0.7.13
+  - @onelabs/sui@1.4.0
+  - @onelabs/zklogin@0.7.13
 
 ## 0.3.12
 
 ### Patch Changes
 
 - Updated dependencies [a45f461]
-  - @mysten/sui@1.3.1
-  - @mysten/zklogin@0.7.12
+  - @onelabs/sui@1.3.1
+  - @onelabs/zklogin@0.7.12
 
 ## 0.3.11
 
@@ -346,8 +346,8 @@
 - Updated dependencies [cdedf69]
 - Updated dependencies [0f27a97]
 - Updated dependencies [beed646]
-  - @mysten/sui@1.3.0
-  - @mysten/zklogin@0.7.11
+  - @onelabs/sui@1.3.0
+  - @onelabs/zklogin@0.7.11
 
 ## 0.3.10
 
@@ -356,86 +356,86 @@
 - Updated dependencies [06a900c1ab]
 - Updated dependencies [45877014d1]
 - Updated dependencies [87d6f75403]
-  - @mysten/sui@1.2.1
-  - @mysten/zklogin@0.7.10
+  - @onelabs/sui@1.2.1
+  - @onelabs/zklogin@0.7.10
 
 ## 0.3.9
 
 ### Patch Changes
 
 - Updated dependencies [fef99d377f]
-  - @mysten/sui@1.2.0
-  - @mysten/zklogin@0.7.9
+  - @onelabs/sui@1.2.0
+  - @onelabs/zklogin@0.7.9
 
 ## 0.3.8
 
 ### Patch Changes
 
 - Updated dependencies [0dfff33b95]
-  - @mysten/sui@1.1.2
-  - @mysten/zklogin@0.7.8
+  - @onelabs/sui@1.1.2
+  - @onelabs/zklogin@0.7.8
 
 ## 0.3.7
 
 ### Patch Changes
 
 - Updated dependencies [101f1ff4b8]
-  - @mysten/sui@1.1.1
-  - @mysten/zklogin@0.7.7
+  - @onelabs/sui@1.1.1
+  - @onelabs/zklogin@0.7.7
 
 ## 0.3.6
 
 ### Patch Changes
 
 - Updated dependencies [bae8f9683c]
-  - @mysten/sui@1.1.0
-  - @mysten/zklogin@0.7.6
+  - @onelabs/sui@1.1.0
+  - @onelabs/zklogin@0.7.6
 
 ## 0.3.5
 
 ### Patch Changes
 
 - Updated dependencies [369b924343]
-  - @mysten/sui@1.0.5
-  - @mysten/zklogin@0.7.5
+  - @onelabs/sui@1.0.5
+  - @onelabs/zklogin@0.7.5
 
 ## 0.3.4
 
 ### Patch Changes
 
 - Updated dependencies [f1e828f557]
-  - @mysten/sui@1.0.4
-  - @mysten/zklogin@0.7.4
+  - @onelabs/sui@1.0.4
+  - @onelabs/zklogin@0.7.4
 
 ## 0.3.3
 
 ### Patch Changes
 
 - Updated dependencies [1f20580841]
-  - @mysten/sui@1.0.3
-  - @mysten/zklogin@0.7.3
+  - @onelabs/sui@1.0.3
+  - @onelabs/zklogin@0.7.3
 
 ## 0.3.2
 
 ### Patch Changes
 
 - Updated dependencies [f0a839f874]
-  - @mysten/sui@1.0.2
-  - @mysten/zklogin@0.7.2
+  - @onelabs/sui@1.0.2
+  - @onelabs/zklogin@0.7.2
 
 ## 0.3.1
 
 ### Patch Changes
 
 - Updated dependencies [6fc6235984]
-  - @mysten/sui@1.0.1
-  - @mysten/zklogin@0.7.1
+  - @onelabs/sui@1.0.1
+  - @onelabs/zklogin@0.7.1
 
 ## 0.3.0
 
 ### Minor Changes
 
-- a92b03de42: The Typescript SDK has been renamed to `@mysten/sui` and includes many new features
+- a92b03de42: The Typescript SDK has been renamed to `@onelabs/sui` and includes many new features
   and breaking changes. See the
   [full migration guide](https://sdk.mystenlabs.com/typescript/migrations/sui-1.0) for details on
   how to upgrade.
@@ -444,8 +444,8 @@
 
 - Updated dependencies [ebdfe7cf21]
 - Updated dependencies [a92b03de42]
-  - @mysten/sui@1.0.0
-  - @mysten/zklogin@0.7.0
+  - @onelabs/sui@1.0.0
+  - @onelabs/zklogin@0.7.0
 
 ## 0.2.8
 
@@ -458,8 +458,8 @@
 ### Patch Changes
 
 - Updated dependencies [99b112178c]
-  - @mysten/sui.js@0.54.1
-  - @mysten/zklogin@0.6.3
+  - @onelabs/sui.js@0.54.1
+  - @onelabs/zklogin@0.6.3
 
 ## 0.2.6
 
@@ -467,23 +467,23 @@
 
 - Updated dependencies [b7f673dbd9]
 - Updated dependencies [123b42c75c]
-  - @mysten/sui.js@0.54.0
-  - @mysten/zklogin@0.6.2
+  - @onelabs/sui.js@0.54.0
+  - @onelabs/zklogin@0.6.2
 
 ## 0.2.5
 
 ### Patch Changes
 
 - Updated dependencies [774bfb41a8]
-  - @mysten/sui.js@0.53.0
-  - @mysten/zklogin@0.6.1
+  - @onelabs/sui.js@0.53.0
+  - @onelabs/zklogin@0.6.1
 
 ## 0.2.4
 
 ### Patch Changes
 
 - Updated dependencies [e279098cff]
-  - @mysten/zklogin@0.6.0
+  - @onelabs/zklogin@0.6.0
 
 ## 0.2.3
 
@@ -492,24 +492,24 @@
 - 049610aeb6: Add network to execution flow
 - 9a1406a396: Add missing network param to enokiflow
 - Updated dependencies [929db4976a]
-  - @mysten/sui.js@0.52.0
-  - @mysten/zklogin@0.5.3
+  - @onelabs/sui.js@0.52.0
+  - @onelabs/zklogin@0.5.3
 
 ## 0.2.2
 
 ### Patch Changes
 
 - Updated dependencies [b4ecdb5860]
-  - @mysten/sui.js@0.51.2
-  - @mysten/zklogin@0.5.2
+  - @onelabs/sui.js@0.51.2
+  - @onelabs/zklogin@0.5.2
 
 ## 0.2.1
 
 ### Patch Changes
 
 - Updated dependencies [6984dd1e38]
-  - @mysten/sui.js@0.51.1
-  - @mysten/zklogin@0.5.1
+  - @onelabs/sui.js@0.51.1
+  - @onelabs/zklogin@0.5.1
 
 ## 0.2.0
 
@@ -524,8 +524,8 @@
 - f704211291: Add EnokiClientError to expose error details
 - Updated dependencies [0cafa94027]
 - Updated dependencies [3a84c3ab21]
-  - @mysten/sui.js@0.51.0
-  - @mysten/zklogin@0.5.0
+  - @onelabs/sui.js@0.51.0
+  - @onelabs/zklogin@0.5.0
 
 ## 0.1.3
 
@@ -533,8 +533,8 @@
 
 - 4830361fa4: Updated typescript version
 - Updated dependencies [4830361fa4]
-  - @mysten/sui.js@0.50.1
-  - @mysten/zklogin@0.4.3
+  - @onelabs/sui.js@0.50.1
+  - @onelabs/zklogin@0.4.3
 
 ## 0.1.2
 
@@ -548,16 +548,16 @@
 - Updated dependencies [13e922d9b1]
 - Updated dependencies [a34f1cb67d]
 - Updated dependencies [220a766d86]
-  - @mysten/sui.js@0.50.0
-  - @mysten/zklogin@0.4.2
+  - @onelabs/sui.js@0.50.0
+  - @onelabs/zklogin@0.4.2
 
 ## 0.1.1
 
 ### Patch Changes
 
 - Updated dependencies [9ac0a4ec01]
-  - @mysten/sui.js@0.49.1
-  - @mysten/zklogin@0.4.1
+  - @onelabs/sui.js@0.49.1
+  - @onelabs/zklogin@0.4.1
 
 ## 0.1.0
 
@@ -568,16 +568,16 @@
 ### Patch Changes
 
 - Updated dependencies [e5f9e3ba21]
-  - @mysten/sui.js@0.49.0
-  - @mysten/zklogin@0.4.0
+  - @onelabs/sui.js@0.49.0
+  - @onelabs/zklogin@0.4.0
 
 ## 0.0.8
 
 ### Patch Changes
 
 - Updated dependencies [dd362ec1d6]
-  - @mysten/sui.js@0.48.1
-  - @mysten/zklogin@0.3.10
+  - @onelabs/sui.js@0.48.1
+  - @onelabs/zklogin@0.3.10
 
 ## 0.0.7
 
@@ -585,8 +585,8 @@
 
 - dd485449a7: Update to new two-step API
 - Updated dependencies [cdcfa76c43]
-  - @mysten/sui.js@0.48.0
-  - @mysten/zklogin@0.3.9
+  - @onelabs/sui.js@0.48.0
+  - @onelabs/zklogin@0.3.9
 
 ## 0.0.6
 
@@ -599,7 +599,7 @@
 ### Patch Changes
 
 - Updated dependencies [0e3d0dfae]
-  - @mysten/zklogin@0.3.8
+  - @onelabs/zklogin@0.3.8
 
 ## 0.0.4
 
@@ -623,5 +623,5 @@
 - Updated dependencies [9ac7e2f3d]
 - Updated dependencies [0259aec82]
 - Updated dependencies [64d45ba27]
-  - @mysten/sui.js@0.47.0
-  - @mysten/zklogin@0.3.7
+  - @onelabs/sui.js@0.47.0
+  - @onelabs/zklogin@0.3.7

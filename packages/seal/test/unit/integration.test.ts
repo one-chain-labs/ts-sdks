@@ -1,10 +1,10 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { fromBase64, fromHex, toBase64 } from '@mysten/bcs';
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
-import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
-import { Transaction } from '@mysten/sui/transactions';
+import { fromBase64, fromHex, toBase64 } from '@onelabs/bcs';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
+import { Ed25519Keypair } from '@onelabs/sui/keypairs/ed25519';
+import { Transaction } from '@onelabs/sui/transactions';
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 
 import { SealClient } from '../../src';

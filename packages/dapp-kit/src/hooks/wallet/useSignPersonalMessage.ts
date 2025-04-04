@@ -4,7 +4,7 @@
 import type {
 	SuiSignPersonalMessageInput,
 	SuiSignPersonalMessageOutput,
-} from '@mysten/wallet-standard';
+} from '@onelabs/wallet-standard';
 import type { UseMutationOptions, UseMutationResult } from '@tanstack/react-query';
 import { useMutation } from '@tanstack/react-query';
 

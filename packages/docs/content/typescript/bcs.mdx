@@ -2,11 +2,11 @@
 title: BCS
 ---
 
-The `@mysten/sui/bcs` package extends `@mysten/bcs` with Sui specific scheme definitions.
+The `@onelabs/sui/bcs` package extends `@onelabs/bcs` with Sui specific scheme definitions.
 
 To learn more about using BCS see the [BCS documentation](/bcs).
 
-the `bcs` export of `@mysten/sui/bcs` contains all the same exports as `bcs` from `@mysten/bcs` plus
+the `bcs` export of `@onelabs/sui/bcs` contains all the same exports as `bcs` from `@onelabs/bcs` plus
 the following pre-defined schemes:
 
 - `U8`
@@ -46,7 +46,7 @@ All the upper-cased values are `BcsType` instances, and can be used directly to 
 data.
 
 ```typescript
-import { bcs } from '@mysten/sui/bcs';
+import { bcs } from '@onelabs/sui/bcs';
 
 bcs.U8.serialize(1);
 bcs.Address.serialize('0x1');

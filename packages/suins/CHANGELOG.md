@@ -1,4 +1,4 @@
-# @mysten/suins
+# @onelabs/suins
 
 ## 0.7.8
 
@@ -6,28 +6,28 @@
 
 - 7ba32a4: update dependencies
 - Updated dependencies [7ba32a4]
-  - @mysten/sui@1.26.1
+  - @onelabs/sui@1.26.1
 
 ## 0.7.7
 
 ### Patch Changes
 
 - Updated dependencies [906dd14]
-  - @mysten/sui@1.26.0
+  - @onelabs/sui@1.26.0
 
 ## 0.7.6
 
 ### Patch Changes
 
 - Updated dependencies [e8b5d04]
-  - @mysten/sui@1.25.0
+  - @onelabs/sui@1.25.0
 
 ## 0.7.5
 
 ### Patch Changes
 
 - Updated dependencies [cf3d12d]
-  - @mysten/sui@1.24.0
+  - @onelabs/sui@1.24.0
 
 ## 0.7.4
 
@@ -36,14 +36,14 @@
 - f7980e8: Bump axios version
 - Updated dependencies [8baac61]
 - Updated dependencies [8baac61]
-  - @mysten/sui@1.23.0
+  - @onelabs/sui@1.23.0
 
 ## 0.7.3
 
 ### Patch Changes
 
 - Updated dependencies [03975f4]
-  - @mysten/sui@1.22.0
+  - @onelabs/sui@1.22.0
 
 ## 0.7.2
 
@@ -55,7 +55,7 @@
 
 ### Patch Changes
 
-- @mysten/sui@1.21.2
+- @onelabs/sui@1.21.2
 
 ## 0.7.0
 
@@ -127,7 +127,7 @@
 
 ### Patch Changes
 
-- d684ec0: Update @mysten/sui.js dependency
+- d684ec0: Update @onelabs/sui.js dependency
 
 ## 0.4.0
 
@@ -140,7 +140,7 @@
 
 ### Patch Changes
 
-- 5001e9c: Update @mysten/sui dependency to 1.8.0
+- 5001e9c: Update @onelabs/sui dependency to 1.8.0
 
 ## 0.3.0
 
@@ -152,7 +152,7 @@
 
 ### Minor Changes
 
-- 537078a: Update to @mysten/sui 1.3, accept @ format in client queries
+- 537078a: Update to @onelabs/sui 1.3, accept @ format in client queries
 
 ## 0.1.1
 
@@ -164,7 +164,7 @@
 
 ### Minor Changes
 
-- f537561: Updates to use @mysten/sui package. Breaking update.
+- f537561: Updates to use @onelabs/sui package. Breaking update.
 
 ## 0.0.3
 

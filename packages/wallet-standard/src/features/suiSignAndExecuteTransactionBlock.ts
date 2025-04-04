@@ -5,7 +5,7 @@ import type {
 	ExecuteTransactionRequestType,
 	SuiTransactionBlockResponse,
 	SuiTransactionBlockResponseOptions,
-} from '@mysten/sui/client';
+} from '@onelabs/sui/client';
 
 import type { SuiSignTransactionBlockInput } from './suiSignTransactionBlock.js';
 

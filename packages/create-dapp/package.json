@@ -1,6 +1,6 @@
 {
-	"name": "@mysten/create-dapp",
-	"author": "Mysten Labs <build@mystenlabs.com>",
+	"name": "@onelabs/create-dapp",
+	"author": "Mysten Labs <build@onelabslabs.com>",
 	"description": "A CLI for creating new Sui dApps",
 	"homepage": "https://sdk.mystenlabs.com",
 	"version": "0.3.57",
@@ -29,18 +29,18 @@
 		"lint:fix": "pnpm run eslint:fix && pnpm run prettier:fix"
 	},
 	"bugs": {
-		"url": "https://github.com/MystenLabs/ts-sdks/issues/new"
+		"url": "https://github.com/one-chain-labs/ts-sdks/issues/new"
 	},
 	"publishConfig": {
 		"access": "public"
 	},
 	"devDependencies": {
-		"@mysten/build-scripts": "workspace:*",
+		"@onelabs/build-scripts": "workspace:*",
 		"typescript": "^5.8.2"
 	},
 	"dependencies": {
-		"@mysten/dapp-kit": "workspace:*",
-		"@mysten/sui": "workspace:*",
+		"@onelabs/dapp-kit": "workspace:*",
+		"@onelabs/sui": "workspace:*",
 		"@types/node": "^22.13.17",
 		"enquirer": "^2.4.1"
 	},

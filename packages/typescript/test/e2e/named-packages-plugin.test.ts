@@ -51,7 +51,7 @@ const localCachePlugin = namedPackagesPlugin({
 		types: {
 			'@framework/sui::vec_set::VecSet': '0x2::vec_set::VecSet',
 			'@framework/std::string::String': '0x1::string::String',
-			'@framework/sui::sui::SUI': '0x2::sui::SUI',
+			'@framework/oct::OCT::SUI': '0x2::oct::OCT',
 		},
 	},
 });
@@ -123,7 +123,7 @@ describe.concurrent('Name Resolution Plugin (Local Cache)', () => {
 
 		const zeroCoin = transaction.moveCall({
 			target: '@framework/sui::coin::zero',
-			typeArguments: ['@framework/sui::sui::SUI'],
+			typeArguments: ['@framework/oct::OCT::SUI'],
 		});
 
 		transaction.transferObjects([zeroCoin], normalizeSuiAddress('0x2'));
@@ -145,7 +145,7 @@ describe.concurrent('Name Resolution Plugin (Local Cache)', () => {
 
 		const zeroCoin = transaction.moveCall({
 			target: '@framework/sui::coin::zero',
-			typeArguments: ['@framework/sui::sui::SUI'],
+			typeArguments: ['@framework/oct::OCT::SUI'],
 		});
 
 		transaction.transferObjects([zeroCoin], normalizeSuiAddress('0x2'));
@@ -190,7 +190,7 @@ describe.concurrent('Utility functions', () => {
 				],
 			},
 			{
-				input: ['u64', '0x2::balance::Balance<0x2::sui::SUI>'],
+				input: ['u64', '0x2::balance::Balance<0x2::oct::OCT>'],
 				output: [],
 			},
 		];
@@ -297,7 +297,7 @@ const simplePtb = async (network: 'mainnet' | 'testnet') => {
 	// a mix of addresses & names work too (in the same PTB).
 	const coin = transaction.moveCall({
 		target: '0x2::coin::zero',
-		typeArguments: ['0x2::sui::SUI'],
+		typeArguments: ['0x2::oct::OCT'],
 	});
 
 	transaction.transferObjects([coin], normalizeSuiAddress('0x2'));

@@ -8,8 +8,8 @@ import type {
 	StandardEventsOnMethod,
 	Wallet,
 	WalletWithRequiredFeatures,
-} from '@mysten/wallet-standard';
-import { SUI_CHAINS } from '@mysten/wallet-standard';
+} from '@onelabs/wallet-standard';
+import { SUI_CHAINS } from '@onelabs/wallet-standard';
 import type { Mock } from 'vitest';
 
 export class MockWallet implements Wallet {

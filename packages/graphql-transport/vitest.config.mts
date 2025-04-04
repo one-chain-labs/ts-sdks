@@ -17,10 +17,10 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			'@mysten/bcs': new URL('../bcs/src', import.meta.url).pathname,
-			'@mysten/sui/transactions': new URL('../typescript/src/transactions', import.meta.url)
+			'@onelabs/bcs': new URL('../bcs/src', import.meta.url).pathname,
+			'@onelabs/sui/transactions': new URL('../typescript/src/transactions', import.meta.url)
 				.pathname,
-			'@mysten/sui': new URL('../typescript/src', import.meta.url).pathname,
+			'@onelabs/sui': new URL('../typescript/src', import.meta.url).pathname,
 		},
 	},
 });

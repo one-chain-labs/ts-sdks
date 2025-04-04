@@ -1,9 +1,9 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { ObjectOwner, SuiObjectChange, SuiTransactionBlockResponse } from '@mysten/sui/client';
-import type { Transaction } from '@mysten/sui/transactions';
-import { normalizeStructTag, normalizeSuiAddress, parseStructTag } from '@mysten/sui/utils';
+import type { ObjectOwner, SuiObjectChange, SuiTransactionBlockResponse } from '@onelabs/sui/client';
+import type { Transaction } from '@onelabs/sui/transactions';
+import { normalizeStructTag, normalizeSuiAddress, parseStructTag } from '@onelabs/sui/utils';
 
 // eslint-disable-next-line import/no-cycle
 

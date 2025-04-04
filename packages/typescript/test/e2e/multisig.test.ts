@@ -3,7 +3,7 @@
 
 import { tmpdir } from 'os';
 import path from 'path';
-import { fromBase64 } from '@mysten/bcs';
+import { fromBase64 } from '@onelabs/bcs';
 import { describe, expect, it } from 'vitest';
 
 import { decodeSuiPrivateKey } from '../../src/cryptography';

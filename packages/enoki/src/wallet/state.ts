@@ -1,10 +1,10 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { ExportedWebCryptoKeypair } from '@mysten/signers/webcrypto';
-import { WebCryptoSigner } from '@mysten/signers/webcrypto';
-import { decodeJwt } from '@mysten/sui/zklogin';
-import type { ZkLoginSignatureInputs } from '@mysten/sui/zklogin';
+import type { ExportedWebCryptoKeypair } from '@onelabs/signers/webcrypto';
+import { WebCryptoSigner } from '@onelabs/signers/webcrypto';
+import { decodeJwt } from '@onelabs/sui/zklogin';
+import type { ZkLoginSignatureInputs } from '@onelabs/sui/zklogin';
 import type { UseStore } from 'idb-keyval';
 import { clear, createStore, get, set } from 'idb-keyval';
 import type { WritableAtom } from 'nanostores';

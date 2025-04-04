@@ -100,7 +100,7 @@ importers:
         specifier: ^1.2.4
         version: 1.2.4
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@size-limit/preset-small-lib':
@@ -146,10 +146,10 @@ importers:
 
   packages/create-dapp:
     dependencies:
-      '@mysten/dapp-kit':
+      '@onelabs/dapp-kit':
         specifier: workspace:*
         version: link:../dapp-kit
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
       '@types/node':
@@ -159,7 +159,7 @@ importers:
         specifier: ^2.4.1
         version: 2.4.1
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       typescript:
@@ -168,10 +168,10 @@ importers:
 
   packages/create-dapp/templates/react-client-dapp:
     dependencies:
-      '@mysten/dapp-kit':
+      '@onelabs/dapp-kit':
         specifier: workspace:*
         version: link:../../../dapp-kit
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../../../typescript
       '@radix-ui/colors':
@@ -229,10 +229,10 @@ importers:
 
   packages/create-dapp/templates/react-e2e-counter:
     dependencies:
-      '@mysten/dapp-kit':
+      '@onelabs/dapp-kit':
         specifier: workspace:*
         version: link:../../../dapp-kit
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../../../typescript
       '@radix-ui/colors':
@@ -293,13 +293,13 @@ importers:
 
   packages/dapp-kit:
     dependencies:
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
-      '@mysten/wallet-standard':
+      '@onelabs/wallet-standard':
         specifier: workspace:*
         version: link:../wallet-standard
-      '@mysten/zksend':
+      '@onelabs/zksend':
         specifier: workspace:*
         version: link:../zksend
       '@radix-ui/react-dialog':
@@ -327,7 +327,7 @@ importers:
         specifier: ^4.5.4
         version: 4.5.5(@types/react@18.3.18)(react@18.3.1)
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@size-limit/preset-small-lib':
@@ -384,11 +384,11 @@ importers:
 
   packages/deepbook:
     dependencies:
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@types/node':
@@ -418,14 +418,14 @@ importers:
 
   packages/deepbook-v3:
     dependencies:
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
     devDependencies:
       '@iarna/toml':
         specifier: ^2.2.5
         version: 2.2.5
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@types/node':
@@ -455,46 +455,46 @@ importers:
 
   packages/docs:
     dependencies:
-      '@mysten/bcs':
+      '@onelabs/bcs':
         specifier: workspace:*
         version: link:../bcs
-      '@mysten/dapp-kit':
+      '@onelabs/dapp-kit':
         specifier: workspace:*
         version: link:../dapp-kit
-      '@mysten/deepbook':
+      '@onelabs/deepbook':
         specifier: workspace:*
         version: link:../deepbook
-      '@mysten/deepbook-v3':
+      '@onelabs/deepbook-v3':
         specifier: workspace:*
         version: link:../deepbook-v3
-      '@mysten/enoki':
+      '@onelabs/enoki':
         specifier: workspace:*
         version: link:../enoki
-      '@mysten/graphql-transport':
+      '@onelabs/graphql-transport':
         specifier: workspace:*
         version: link:../graphql-transport
-      '@mysten/kiosk':
+      '@onelabs/kiosk':
         specifier: workspace:*
         version: link:../kiosk
-      '@mysten/seal':
+      '@onelabs/seal':
         specifier: workspace:*
         version: link:../seal
-      '@mysten/signers':
+      '@onelabs/signers':
         specifier: workspace:*
         version: link:../signers
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
-      '@mysten/suins':
+      '@onelabs/suins':
         specifier: workspace:*
         version: link:../suins
-      '@mysten/wallet-standard':
+      '@onelabs/wallet-standard':
         specifier: workspace:*
         version: link:../wallet-standard
-      '@mysten/walrus':
+      '@onelabs/walrus':
         specifier: workspace:*
         version: link:../walrus
-      '@mysten/zksend':
+      '@onelabs/zksend':
         specifier: workspace:*
         version: link:../zksend
       '@tanstack/react-query':
@@ -576,13 +576,13 @@ importers:
 
   packages/enoki:
     dependencies:
-      '@mysten/signers':
+      '@onelabs/signers':
         specifier: workspace:*
         version: link:../signers
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
-      '@mysten/wallet-standard':
+      '@onelabs/wallet-standard':
         specifier: workspace:*
         version: link:../wallet-standard
       '@nanostores/react':
@@ -598,10 +598,10 @@ importers:
         specifier: ^0.10.3
         version: 0.10.3
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
-      '@mysten/dapp-kit':
+      '@onelabs/dapp-kit':
         specifier: workspace:*
         version: link:../dapp-kit
       '@tanstack/react-query':
@@ -637,10 +637,10 @@ importers:
       '@graphql-typed-document-node/core':
         specifier: ^3.2.0
         version: 3.2.0(graphql@16.10.0)
-      '@mysten/bcs':
+      '@onelabs/bcs':
         specifier: workspace:*
         version: link:../bcs
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
       graphql:
@@ -665,7 +665,7 @@ importers:
       '@graphql-codegen/typescript-operations':
         specifier: ^4.6.0
         version: 4.6.0(graphql@16.10.0)
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@parcel/watcher':
@@ -689,11 +689,11 @@ importers:
 
   packages/kiosk:
     dependencies:
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       cross-env:
@@ -730,7 +730,7 @@ importers:
       '@ledgerhq/hw-transport-mocker':
         specifier: ^6.29.0
         version: 6.29.4
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@size-limit/preset-small-lib':
@@ -751,10 +751,10 @@ importers:
 
   packages/move-bytecode-template:
     devDependencies:
-      '@mysten/bcs':
+      '@onelabs/bcs':
         specifier: workspace:*
         version: link:../bcs
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       typescript:
@@ -769,7 +769,7 @@ importers:
 
   packages/mvr-static:
     dependencies:
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
       '@types/node':
@@ -785,7 +785,7 @@ importers:
         specifier: ^3.5.3
         version: 3.5.3
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       typescript:
@@ -797,10 +797,10 @@ importers:
 
   packages/seal:
     dependencies:
-      '@mysten/bcs':
+      '@onelabs/bcs':
         specifier: workspace:*
         version: link:../bcs
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
       '@noble/curves':
@@ -816,7 +816,7 @@ importers:
       '@hey-api/openapi-ts':
         specifier: ^0.66.1
         version: 0.66.1(typescript@5.8.2)
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@types/node':
@@ -834,10 +834,10 @@ importers:
       '@google-cloud/kms':
         specifier: ^4.5.0
         version: 4.5.0
-      '@mysten/ledgerjs-hw-app-sui':
+      '@onelabs/ledgerjs-hw-app-sui':
         specifier: workspace:*
         version: link:../ledgerjs-hw-app-sui
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
       '@noble/curves':
@@ -850,7 +850,7 @@ importers:
         specifier: ^8.0.2
         version: 8.0.2
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@types/node':
@@ -868,7 +868,7 @@ importers:
 
   packages/suins:
     dependencies:
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
       axios:
@@ -878,7 +878,7 @@ importers:
         specifier: ^3.9.1
         version: 3.9.1
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@types/tmp':
@@ -902,7 +902,7 @@ importers:
       '@graphql-typed-document-node/core':
         specifier: ^3.2.0
         version: 3.2.0(graphql@16.10.0)
-      '@mysten/bcs':
+      '@onelabs/bcs':
         specifier: workspace:*
         version: link:../bcs
       '@noble/curves':
@@ -954,7 +954,7 @@ importers:
       '@iarna/toml':
         specifier: ^2.2.5
         version: 2.2.5
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:^
         version: link:../build-scripts
       '@types/node':
@@ -1002,14 +1002,14 @@ importers:
 
   packages/wallet-standard:
     dependencies:
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
       '@wallet-standard/core':
         specifier: 1.1.0
         version: 1.1.0
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       typescript:
@@ -1021,13 +1021,13 @@ importers:
 
   packages/walrus:
     dependencies:
-      '@mysten/bcs':
+      '@onelabs/bcs':
         specifier: workspace:*
         version: link:../bcs
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
-      '@mysten/walrus-wasm':
+      '@onelabs/walrus-wasm':
         specifier: workspace:*
         version: link:../walrus-wasm
       dataloader:
@@ -1037,10 +1037,10 @@ importers:
       '@hono/node-server':
         specifier: ^1.14.0
         version: 1.14.0(hono@4.7.5)
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
-      '@mysten/dapp-kit':
+      '@onelabs/dapp-kit':
         specifier: workspace:*
         version: link:../dapp-kit
       '@types/node':
@@ -1075,10 +1075,10 @@ importers:
 
   packages/zksend:
     dependencies:
-      '@mysten/sui':
+      '@onelabs/sui':
         specifier: workspace:*
         version: link:../typescript
-      '@mysten/wallet-standard':
+      '@onelabs/wallet-standard':
         specifier: workspace:*
         version: link:../wallet-standard
       mitt:
@@ -1091,7 +1091,7 @@ importers:
         specifier: ^0.36.0
         version: 0.36.0
     devDependencies:
-      '@mysten/build-scripts':
+      '@onelabs/build-scripts':
         specifier: workspace:*
         version: link:../build-scripts
       '@types/node':

@@ -1,18 +1,18 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { bcs } from '@mysten/sui/bcs';
-import type { OrderArguments, PaginatedEvents, PaginationArguments } from '@mysten/sui/client';
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
-import type { Argument, TransactionObjectInput, TransactionResult } from '@mysten/sui/transactions';
-import { Transaction } from '@mysten/sui/transactions';
+import { bcs } from '@onelabs/sui/bcs';
+import type { OrderArguments, PaginatedEvents, PaginationArguments } from '@onelabs/sui/client';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
+import type { Argument, TransactionObjectInput, TransactionResult } from '@onelabs/sui/transactions';
+import { Transaction } from '@onelabs/sui/transactions';
 import {
 	normalizeStructTag,
 	normalizeSuiAddress,
 	normalizeSuiObjectId,
 	parseStructTag,
 	SUI_CLOCK_OBJECT_ID,
-} from '@mysten/sui/utils';
+} from '@onelabs/sui/utils';
 
 import { BcsOrder } from './types/bcs.js';
 import type {

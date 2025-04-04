@@ -7,11 +7,11 @@ import type {
 	SuiObjectChangeCreated,
 	SuiObjectChangePublished,
 	SuiTransactionBlockResponse,
-} from '@mysten/sui/client';
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
-import { FaucetRateLimitError, getFaucetHost, requestSuiFromFaucetV0 } from '@mysten/sui/faucet';
-import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
-import { Transaction } from '@mysten/sui/transactions';
+} from '@onelabs/sui/client';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
+import { FaucetRateLimitError, getFaucetHost, requestSuiFromFaucetV0 } from '@onelabs/sui/faucet';
+import { Ed25519Keypair } from '@onelabs/sui/keypairs/ed25519';
+import { Transaction } from '@onelabs/sui/transactions';
 import type { ContainerRuntimeClient } from 'testcontainers';
 import { getContainerRuntimeClient } from 'testcontainers';
 import { retry } from 'ts-retry-promise';
@@ -53,7 +53,7 @@ export function getClient(): SuiClient {
 	});
 }
 
-// TODO: expose these testing utils from @mysten/sui
+// TODO: expose these testing utils from @onelabs/sui
 export async function setupSuiClient() {
 	const keypair = Ed25519Keypair.generate();
 	const address = keypair.getPublicKey().toSuiAddress();

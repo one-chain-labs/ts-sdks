@@ -1,4 +1,4 @@
-# @mysten/seal
+# @onelabs/seal
 
 ## 0.3.4
 
@@ -7,15 +7,15 @@
 - 7ba32a4: update dependencies
 - Updated dependencies [7ba32a4]
 - Updated dependencies [c3a788c]
-  - @mysten/sui@1.26.1
-  - @mysten/bcs@1.6.0
+  - @onelabs/sui@1.26.1
+  - @onelabs/bcs@1.6.0
 
 ## 0.3.3
 
 ### Patch Changes
 
 - Updated dependencies [906dd14]
-  - @mysten/sui@1.26.0
+  - @onelabs/sui@1.26.0
 
 ## 0.3.2
 
@@ -50,5 +50,5 @@
 ### Patch Changes
 
 - Updated dependencies [95b1ea5]
-  - @mysten/bcs@1.4.0
-  - @mysten/sui@1.21.2
+  - @onelabs/bcs@1.4.0
+  - @onelabs/sui@1.21.2

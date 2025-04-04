@@ -9,12 +9,12 @@ import {
 	SuiClientProvider,
 	useCurrentAccount,
 	WalletProvider,
-} from '@mysten/dapp-kit';
-import { getFullnodeUrl } from '@mysten/sui/client';
+} from '@onelabs/dapp-kit';
+import { getFullnodeUrl } from '@onelabs/sui/client';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useState } from 'react';
 
-import '@mysten/dapp-kit/dist/index.css';
+import '@onelabs/dapp-kit/dist/index.css';
 
 export const ConnectButtonExample = withProviders(() => {
 	return <ConnectButton />;

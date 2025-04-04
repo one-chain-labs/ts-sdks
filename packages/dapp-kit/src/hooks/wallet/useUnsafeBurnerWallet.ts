@@ -1,10 +1,10 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { SuiClient } from '@mysten/sui/client';
-import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
-import { Transaction } from '@mysten/sui/transactions';
-import { toBase64 } from '@mysten/sui/utils';
+import type { SuiClient } from '@onelabs/sui/client';
+import { Ed25519Keypair } from '@onelabs/sui/keypairs/ed25519';
+import { Transaction } from '@onelabs/sui/transactions';
+import { toBase64 } from '@onelabs/sui/utils';
 import type {
 	StandardConnectFeature,
 	StandardConnectMethod,
@@ -17,8 +17,8 @@ import type {
 	SuiSignTransactionBlockMethod,
 	SuiSignTransactionMethod,
 	Wallet,
-} from '@mysten/wallet-standard';
-import { getWallets, ReadonlyWalletAccount, SUI_CHAINS } from '@mysten/wallet-standard';
+} from '@onelabs/wallet-standard';
+import { getWallets, ReadonlyWalletAccount, SUI_CHAINS } from '@onelabs/wallet-standard';
 import { useEffect } from 'react';
 
 import { useSuiClient } from '../useSuiClient.js';

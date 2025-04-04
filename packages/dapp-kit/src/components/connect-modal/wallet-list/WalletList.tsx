@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { WalletWithRequiredFeatures } from '@mysten/wallet-standard';
+import type { WalletWithRequiredFeatures } from '@onelabs/wallet-standard';
 
 import { getWalletUniqueIdentifier } from '../../../utils/walletUtils.js';
 import { SuiIcon } from '../../icons/SuiIcon.js';

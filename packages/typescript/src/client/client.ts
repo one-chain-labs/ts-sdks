@@ -1,6 +1,6 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
-import { fromBase58, toBase64, toHex } from '@mysten/bcs';
+import { fromBase58, toBase64, toHex } from '@onelabs/bcs';
 
 import type { Signer } from '../cryptography/index.js';
 import { Experimental_SuiClient } from '../experimental/client.js';
@@ -126,7 +126,7 @@ type NetworkOrTransport =
 			url?: never;
 	  };
 
-const SUI_CLIENT_BRAND = Symbol.for('@mysten/SuiClient') as never;
+const SUI_CLIENT_BRAND = Symbol.for('@onelabs/SuiClient') as never;
 
 export function isSuiClient(client: unknown): client is SuiClient {
 	return (

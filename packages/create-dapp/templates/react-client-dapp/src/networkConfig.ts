@@ -1,5 +1,5 @@
-import { getFullnodeUrl } from "@mysten/sui/client";
-import { createNetworkConfig } from "@mysten/dapp-kit";
+import { getFullnodeUrl } from "@onelabs/sui/client";
+import { createNetworkConfig } from "@onelabs/dapp-kit";
 
 const { networkConfig, useNetworkVariable, useNetworkVariables } =
   createNetworkConfig({

@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { WalletWithRequiredFeatures } from '@mysten/wallet-standard';
-import { getWallets } from '@mysten/wallet-standard';
+import type { WalletWithRequiredFeatures } from '@onelabs/wallet-standard';
+import { getWallets } from '@onelabs/wallet-standard';
 import { useEffect } from 'react';
 
 import { getRegisteredWallets } from '../../utils/walletUtils.js';

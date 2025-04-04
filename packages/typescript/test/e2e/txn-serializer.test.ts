@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { bcs } from '@mysten/bcs';
+import { bcs } from '@onelabs/bcs';
 import { beforeAll, describe, expect, it } from 'vitest';
 
 import { SuiTransactionBlockResponse } from '../../src/client';

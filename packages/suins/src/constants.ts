@@ -39,7 +39,7 @@ export const mainPackage: Config = {
 		},
 		coins: {
 			SUI: {
-				type: '0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI',
+				type: '0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT',
 				feed: '0x23d7315113f5b1d3ba7a83604c44b94d79f4fd69af77f804fc7f920a6dc65744',
 			},
 			NS: {
@@ -78,7 +78,7 @@ export const mainPackage: Config = {
 		/// Testnet coins will be different here for testing purposes, we can publish our own
 		coins: {
 			SUI: {
-				type: '0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI',
+				type: '0x0000000000000000000000000000000000000000000000000000000000000002::oct::OCT',
 				feed: '0x50c67b3fd225db8912a424dd4baed60ffdde625ed2feaaf283724f9608fea266',
 			},
 			/// this is a test token published as 0xb48aac3f53bab328e1eb4c5b3c34f55e760f2fb3f2305ee1a474878d80f650f0::TESTNS::TESTNS

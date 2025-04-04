@@ -1,5 +1,5 @@
 {
-	"name": "@mysten/ledgerjs-hw-app-sui",
+	"name": "@onelabs/ledgerjs-hw-app-sui",
 	"version": "0.5.0",
 	"description": "Ledger Hardware Wallet Sui Application API",
 	"keywords": [
@@ -10,19 +10,19 @@
 		"Blue",
 		"Hardware Wallet"
 	],
-	"author": "Mysten Labs <build@mystenlabs.com>",
+	"author": "Mysten Labs <build@onelabslabs.com>",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
 		"url": "github.com:MystenLabs/sui.git"
 	},
 	"bugs": {
-		"url": "https://github.com/MystenLabs/ts-sdks/issues"
+		"url": "https://github.com/one-chain-labs/ts-sdks/issues"
 	},
 	"publishConfig": {
 		"access": "public"
 	},
-	"homepage": "https://github.com/MystenLabs/ts-sdks/sdk/ledgerjs-hw-app-sui/#readme",
+	"homepage": "https://github.com/one-chain-labs/ts-sdks/sdk/ledgerjs-hw-app-sui/#readme",
 	"files": [
 		"CHANGELOG.md",
 		"dist",
@@ -68,7 +68,7 @@
 	},
 	"devDependencies": {
 		"@ledgerhq/hw-transport-mocker": "^6.29.0",
-		"@mysten/build-scripts": "workspace:*",
+		"@onelabs/build-scripts": "workspace:*",
 		"@size-limit/preset-small-lib": "^11.2.0",
 		"@types/node": "^22.13.17",
 		"size-limit": "^11.2.0",

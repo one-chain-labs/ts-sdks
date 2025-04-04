@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { Transaction } from '@mysten/sui/transactions';
-import { normalizeSuiAddress } from '@mysten/sui/utils';
+import { Transaction } from '@onelabs/sui/transactions';
+import { normalizeSuiAddress } from '@onelabs/sui/utils';
 import { beforeAll, describe, expect, it } from 'vitest';
 
 import {

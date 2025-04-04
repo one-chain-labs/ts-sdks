@@ -1,6 +1,6 @@
 {
-	"name": "@mysten/sui",
-	"author": "Mysten Labs <build@mystenlabs.com>",
+	"name": "@onelabs/sui",
+	"author": "Mysten Labs <build@onelabslabs.com>",
 	"description": "Sui TypeScript API(Work in Progress)",
 	"homepage": "https://sdk.mystenlabs.com",
 	"version": "1.26.1",
@@ -122,7 +122,7 @@
 		"generate-schema": "gql.tada generate-output"
 	},
 	"bugs": {
-		"url": "https://github.com/MystenLabs/ts-sdks/issues/new"
+		"url": "https://github.com/one-chain-labs/ts-sdks/issues/new"
 	},
 	"publishConfig": {
 		"access": "public"
@@ -135,7 +135,7 @@
 		"@graphql-codegen/typescript": "4.1.6",
 		"@graphql-codegen/typescript-operations": "^4.6.0",
 		"@iarna/toml": "^2.2.5",
-		"@mysten/build-scripts": "workspace:^",
+		"@onelabs/build-scripts": "workspace:^",
 		"@types/node": "^22.13.17",
 		"@types/tmp": "^0.2.6",
 		"@types/ws": "^8.18.1",
@@ -153,7 +153,7 @@
 	},
 	"dependencies": {
 		"@graphql-typed-document-node/core": "^3.2.0",
-		"@mysten/bcs": "workspace:*",
+		"@onelabs/bcs": "workspace:*",
 		"@noble/curves": "^1.8.1",
 		"@noble/hashes": "^1.7.1",
 		"@scure/base": "^1.2.4",

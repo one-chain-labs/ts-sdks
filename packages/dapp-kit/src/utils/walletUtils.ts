@@ -6,8 +6,8 @@ import type {
 	Wallet,
 	WalletWithFeatures,
 	WalletWithRequiredFeatures,
-} from '@mysten/wallet-standard';
-import { getWallets, isWalletWithRequiredFeatureSet } from '@mysten/wallet-standard';
+} from '@onelabs/wallet-standard';
+import { getWallets, isWalletWithRequiredFeatureSet } from '@onelabs/wallet-standard';
 
 export function getRegisteredWallets<AdditionalFeatures extends Wallet['features']>(
 	preferredWallets: string[],

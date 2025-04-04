@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
-import { getFullnodeUrl, SuiClient } from '@mysten/sui/client';
-import { Transaction } from '@mysten/sui/transactions';
-import { MIST_PER_SUI, normalizeSuiAddress } from '@mysten/sui/utils';
+import { getFullnodeUrl, SuiClient } from '@onelabs/sui/client';
+import { Transaction } from '@onelabs/sui/transactions';
+import { MIST_PER_SUI, normalizeSuiAddress } from '@onelabs/sui/utils';
 import { expect } from 'vitest';
 
 import { ALLOWED_METADATA, SuinsClient, SuinsTransaction } from '../src/index.js';

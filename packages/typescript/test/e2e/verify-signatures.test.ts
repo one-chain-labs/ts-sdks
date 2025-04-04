@@ -1,6 +1,6 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
-import { fromBase64 } from '@mysten/bcs';
+import { fromBase64 } from '@onelabs/bcs';
 import { describe, expect, it } from 'vitest';
 
 import { SuiGraphQLClient } from '../../src/graphql';

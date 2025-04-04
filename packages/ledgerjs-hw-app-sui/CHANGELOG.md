@@ -1,4 +1,4 @@
-# @mysten/ledgerjs-hw-app-sui
+# @onelabs/ledgerjs-hw-app-sui
 
 ## 0.5.0
 
@@ -27,7 +27,7 @@
 
 ### Minor Changes
 
-- a92b03de42: The Typescript SDK has been renamed to `@mysten/sui` and includes many new features
+- a92b03de42: The Typescript SDK has been renamed to `@onelabs/sui` and includes many new features
   and breaking changes. See the
   [full migration guide](https://sdk.mystenlabs.com/typescript/migrations/sui-1.0) for details on
   how to upgrade.

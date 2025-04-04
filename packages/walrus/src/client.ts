@@ -1,13 +1,13 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { InferBcsType } from '@mysten/bcs';
-import { bcs } from '@mysten/bcs';
-import { SuiClient } from '@mysten/sui/client';
-import type { Signer } from '@mysten/sui/cryptography';
-import type { TransactionObjectArgument } from '@mysten/sui/transactions';
-import { coinWithBalance, Transaction } from '@mysten/sui/transactions';
-import { normalizeStructTag, parseStructTag } from '@mysten/sui/utils';
+import type { InferBcsType } from '@onelabs/bcs';
+import { bcs } from '@onelabs/bcs';
+import { SuiClient } from '@onelabs/sui/client';
+import type { Signer } from '@onelabs/sui/cryptography';
+import type { TransactionObjectArgument } from '@onelabs/sui/transactions';
+import { coinWithBalance, Transaction } from '@onelabs/sui/transactions';
+import { normalizeStructTag, parseStructTag } from '@onelabs/sui/utils';
 
 import {
 	MAINNET_WALRUS_PACKAGE_CONFIG,

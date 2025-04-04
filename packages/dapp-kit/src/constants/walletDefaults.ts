@@ -1,8 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import type { SuiWalletFeatures, WalletWithRequiredFeatures } from '@mysten/wallet-standard';
-import { STASHED_WALLET_NAME } from '@mysten/zksend';
+import type { SuiWalletFeatures, WalletWithRequiredFeatures } from '@onelabs/wallet-standard';
+import { STASHED_WALLET_NAME } from '@onelabs/zksend';
 
 import { createInMemoryStore } from '../utils/stateStorage.js';
 

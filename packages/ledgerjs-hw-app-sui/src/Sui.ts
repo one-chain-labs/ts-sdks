@@ -38,7 +38,7 @@ enum HostToLedger {
  * Sui API
  *
  * @example
- * import Sui from "@mysten/ledgerjs-hw-app-sui";
+ * import Sui from "@onelabs/ledgerjs-hw-app-sui";
  * const sui = new Sui(transport)
  */
 export default class Sui {

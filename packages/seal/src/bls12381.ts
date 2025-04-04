@@ -1,7 +1,7 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { toHex } from '@mysten/bcs';
+import { toHex } from '@onelabs/bcs';
 import type { Fp2, Fp12 } from '@noble/curves/abstract/tower';
 import type { ProjPointType } from '@noble/curves/abstract/weierstrass';
 import { bls12_381 } from '@noble/curves/bls12-381';
