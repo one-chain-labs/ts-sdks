@@ -11,7 +11,7 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
  */
 export const baseOptions: BaseLayoutProps = {
 	nav: {
-		title: 'Mysten Labs SDKs',
+		title: 'OneChain Labs SDKs',
 	},
 	links: [
 		{
@@ -20,7 +20,7 @@ export const baseOptions: BaseLayoutProps = {
 		},
 		{
 			text: 'Discord',
-			url: 'https://discord.com/invite/Sui',
+			url: 'https://discord.com/invite/Oct',
 		},
 	],
 };

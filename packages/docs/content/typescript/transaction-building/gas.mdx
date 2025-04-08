@@ -1,9 +1,9 @@
 ---
-title: Paying for Sui Transactions with Gas Coins
+title: Paying for Oct Transactions with Gas Coins
 ---
 
 With Programmable Transactions, you can use the gas payment coin to construct coins with a set
-balance using `splitCoin`. This is useful for Sui payments, and avoids the need for up-front coin
+balance using `splitCoin`. This is useful for Oct payments, and avoids the need for up-front coin
 selection. You can use `tx.gas` to access the gas coin in a transaction, and it is valid as input
 for any arguments, as long as it is used
 [by-reference](https://docs.sui.io/guides/developer/sui-101/simulating-refs). Practically speaking,
@@ -35,7 +35,7 @@ beforehand. The dry run gas consumption is then used to determine a balance for 
 can override this behavior by explicitly setting a gas budget for the transaction, by calling
 `setGasBudget` on the transaction builder.
 
-**Note:** The gas budget is represented in Sui, and should take the gas price of the transaction
+**Note:** The gas budget is represented in Oct, and should take the gas price of the transaction
 into account.
 
 ```tsx

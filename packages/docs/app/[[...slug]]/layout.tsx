@@ -14,18 +14,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 			sidebar={{
 				tabs: [
 					{
-						title: 'Sui SDK',
-						description: 'TypeScript interfaces for Sui',
+						title: 'OneChain SDK',
+						description: 'TypeScript interfaces for OneChain',
 						url: '/typescript',
 					},
 					{
 						title: 'BCS',
-						description: 'Encoding and decoding Sui objects',
+						description: 'Encoding and decoding Oct objects',
 						url: '/bcs',
 					},
 					{
 						title: 'Dapp Kit',
-						description: 'Build Sui dapps in React',
+						description: 'Build OneChain dapps in React',
 						url: '/dapp-kit',
 					},
 					{
@@ -40,8 +40,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 					},
 					{
 						title: 'zkSend',
-						description: 'Send Sui with a link',
+						description: 'Send Oct with a link',
 						url: '/zksend',
+					},
+					{
+						title: 'wallet',
+						description: 'Support zklogin via hone',
+						url: '/wallet',
 					},
 					{
 						title: 'API Reference',

@@ -8,19 +8,19 @@ import { Inter } from 'next/font/google';
 
 export const metadata: Metadata = {
 	title: {
-		template: '%s | Mysten Labs TypeScript SDK Docs',
-		default: 'Mysten Labs TypeScript SDK Docs',
+		template: '%s | OneChain Labs TypeScript SDK Docs',
+		default: 'OneChain Labs TypeScript SDK Docs',
 	},
 	description:
-		'Mysten Labs TypeScript SDK Docs. Discover the power of Sui and Walrus through examples, guides, and concepts.',
+		'OneChain Labs TypeScript SDK Docs. Discover the power of Sui and Walrus through examples, guides, and concepts.',
 	openGraph: {
-		title: 'Mysten Labs TypeScript SDK Docs',
+		title: 'OneChain Labs TypeScript SDK Docs',
 		description:
-			'Mysten Labs TypeScript SDK Docs. Discover the power of Sui and Walrus through examples, guides, and concepts.',
-		siteName: 'Mysten Labs TypeScript SDK Docs',
+			'OneChain Labs TypeScript SDK Docs. Discover the power of Sui and Walrus through examples, guides, and concepts.',
+		siteName: 'OneChain Labs TypeScript SDK Docs',
 	},
 	appleWebApp: {
-		title: 'Mysten Labs TypeScript SDK Docs',
+		title: 'OneChain Labs TypeScript SDK Docs',
 	},
 };
 

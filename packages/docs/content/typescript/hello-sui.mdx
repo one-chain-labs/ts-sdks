@@ -1,17 +1,17 @@
 ---
-title: Hello Sui
+title: Hello OneChain
 ---
 
-This basic example introduces you to the Sui TypeScript SDK. The Node.js example mints SUI on a Sui
-network and then queries the address to get a sum for the owned SUI. You don't need to use an IDE to
+This basic example introduces you to the OneChain TypeScript SDK. The Node.js example mints OCT on a OneChain
+network and then queries the address to get a sum for the owned OCT. You don't need to use an IDE to
 complete the example, but one like Microsoft Visual Studio Code helps centralize more advanced
 projects.
 
 ## Before you begin
 
-You need an address on a Sui development network (Devnet, Testnet, local). If you don't already have
-an address, use the [Sui Client CLI](https://docs.sui.io/references/cli/client) or the
-[Sui Wallet browser extension](https://docs.mystenlabs.com) to create one.
+You need an address on a OneChain development network (Devnet, Testnet, local). If you don't already have
+an address, use the [OneChain Client CLI](https://docs.sui.io/references/cli/client) or the
+[OneChain Wallet browser extension](https://docs.mystenlabs.com) to create one.
 
 You also need [Node.js](https://nodejs.org/en/download/current) and a package manager like
 [pnpm](https://pnpm.io/installation) to follow this example, so install them on your system if you
@@ -23,13 +23,13 @@ Using a Terminal or Console, create a folder on your system (`hello-sui` in this
 it the working directory.
 
 ```sh
-mkdir hello-sui
-cd hello-sui
+mkdir hello-onechain
+cd hello-onechain
 ```
 
 When you use a package manager to install the necessary packages, it downloads the modules to your
 `node_modules` folder and adds the references to your `package.json` file, creating the file if it
-doesn't already exist. For this example, you need only the Sui TypeScript SDK:
+doesn't already exist. For this example, you need only the OneChain TypeScript SDK:
 
 ```sh npm2yarn
 npm i -D @onelabs/sui
@@ -44,10 +44,10 @@ version number.
 }
 ```
 
-## Get some SUI for your account
+## Get some OCT for your account
 
-Instead of a 'Hello World' output to your console, this example introduces some SUI to your wallet
-address. You must be on Devnet, Testnet, or a local network to use a faucet for minting SUI.
+Instead of a 'Hello World' output to your console, this example introduces some OCT to your wallet
+address. You must be on Devnet, Testnet, or a local network to use a faucet for minting OCT.
 
 Create a new `index.js` file in the root of your project with the following code.
 
@@ -62,33 +62,33 @@ const MY_ADDRESS = '<YOUR_SUI_ADDRESS>';
 // create a new SuiClient object pointing to the network you want to use
 const suiClient = new SuiClient({ url: getFullnodeUrl('devnet') });
 
-// Convert MIST to Sui
+// Convert MIST to OCT
 const balance = (balance) => {
 	return Number.parseInt(balance.totalBalance) / Number(MIST_PER_SUI);
 };
 
-// store the JSON representation for the SUI the address owns before using faucet
-const suiBefore = await suiClient.getBalance({
+// store the JSON representation for the OCT the address owns before using faucet
+const octBefore = await suiClient.getBalance({
 	owner: MY_ADDRESS,
 });
 
 await requestSuiFromFaucetV1({
 	// use getFaucetHost to make sure you're using correct faucet address
-	// you can also just use the address (see Sui TypeScript SDK Quick Start for values)
+	// you can also just use the address (see OneChain TypeScript SDK Quick Start for values)
 	host: getFaucetHost('devnet'),
 	recipient: MY_ADDRESS,
 });
 
-// store the JSON representation for the SUI the address owns after using faucet
-const suiAfter = await suiClient.getBalance({
+// store the JSON representation for the OCT the address owns after using faucet
+const octAfter = await suiClient.getBalance({
 	owner: MY_ADDRESS,
 });
 
 // Output result to console.
 console.log(
-	`Balance before faucet: ${balance(suiBefore)} SUI. Balance after: ${balance(
-		suiAfter,
-	)} SUI. Hello, SUI!`,
+	`Balance before faucet: ${balance(octBefore)} OCT. Balance after: ${balance(
+		octAfter,
+	)} OCT. Hello, OCT!`,
 );
 ```
 
@@ -98,15 +98,15 @@ Save the file, then use Node.js to run it in your Console or Terminal:
 node index.js
 ```
 
-The code imports the `requestSuiFromFaucetV1` function from the SDK and calls it to mint SUI for the
-provided address. The code also imports `SuiClient` to create a new client on the Sui network that
-it uses to query the address and output the amount of SUI the address owns before and after using
-the faucet. You can check the total SUI for your address using the Sui Wallet or Sui Client CLI.
+The code imports the `requestSuiFromFaucetV1` function from the SDK and calls it to mint OCT for the
+provided address. The code also imports `SuiClient` to create a new client on the OneChain network that
+it uses to query the address and output the amount of OCT the address owns before and after using
+the faucet. You can check the total OCT for your address using the OneChain Wallet or OneChain Client CLI.
 
 <Callout type="info">
 	Faucets on Devnet and Testnet are rate limited. If you run the script too many times, you surpass
 	the limit and must wait to successfully run it again.
 </Callout>
 
-You can also use the [Sui Client CLI](https://docs.sui.io/references/cli/client) to perform client
-calls on a Sui network.
+You can also use the [OneChain Client CLI](https://docs.sui.io/references/cli/client) to perform client
+calls on a OneChain network.

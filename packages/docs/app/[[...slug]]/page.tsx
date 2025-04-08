@@ -22,7 +22,7 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
 			toc={page.data.toc}
 			full={page.data.full}
 			editOnGithub={{
-				owner: 'MystenLabs',
+				owner: 'OneChainLabs',
 				repo: 'ts-sdks',
 				sha: 'main',
 				path: `packages/docs/content/${page.file.path}`,

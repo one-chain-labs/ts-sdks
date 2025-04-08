@@ -1,0 +1,101 @@
+---
+title: Wallet functions
+---
+
+Here we can build asset transfer, transaction query, payment transaction, etc.
+
+## BuildSponsorTransaction
+Construct any transaction, such as token transfer, contract call, etc.
+```js
+const {SUI_TYPE_ARG: OCT} = require('@onelabs/sui/utils')
+const {Transaction}       = require('@onelabs/sui/transactions');
+const {Ed25519Keypair}    = require('@onelabs/sui/keypairs/ed25519');
+const senderKeypair       = Ed25519Keypair.generate();
+const receiverKeypair     = Ed25519Keypair.generate();
+const Bcs                 = require('@onelabs/bcs');
+
+let coinObjects = await provider.getCoins({
+  owner:    senderKeypair.getPublicKey().toSuiAddress(),
+  coinType: OCT
+});
+
+let coinObject = coinObjects.data[0].coinObjectId;
+
+// New transferObjects transaction
+let transaction = new Transaction();
+transaction.transferObjects([transaction.object(coinObject)], transaction.pure.address(receiverKeypair.getPublicKey().toSuiAddress()));
+
+let onlyTransactionKind = true;
+const transactionBytes  = await transaction.build({
+  client: provider,
+  onlyTransactionKind
+});
+const rawTransaction    = Bcs.toB64(transactionBytes);
+//Request one chain wallet append gas sponsor payment
+let sponsorTransaction      = await connection.buildSponsorTransaction({
+  address:   senderKeypair.getPublicKey().toSuiAddress(),
+  gasBudget: '0.001',
+  onlyTransactionKind,
+  rawTransaction
+});
+```
+
+## SendSponsorTransaction
+Send and execute sponsor transaction
+```js
+//Use the sender private key to sign the transaction
+let {signature} = await senderKeypair.signTransaction(Bcs.fromBase64(sponsorTransaction.rawTransaction));
+
+//Request one chain wallet send signed tx
+let transaction = await connection.sendSponsorTransaction({
+  reservationId: sponsorTransaction.reservationId,
+  txBytes:       sponsorTransaction.rawTransaction,
+  userSig:       signature
+});
+// transaction.status=true.
+// transaction.hash
+```
+
+## BuildTransferTransaction
+Use zklogin address to construct transfer transaction
+```js
+let receiver = Ed25519Keypair.generate();
+let transferTx = await connection.buildTransferTransaction({
+    coinType:"0x2::oct::OCT",
+    amount: 1,
+    fromAddress: user.address,
+    toAddress: receiver.getPublicKey().toSuiAddress()
+});
+//transferTx.hash
+//transferTx.rawTransaction
+```
+
+## SendTransferTransaction
+Zklogin signs and broadcasts transfer transactions
+```js
+const zk = require('@onelabs/sui/zklogin');
+
+const zkSignTransaction = async (user, rawTransaction) => {
+  let {signature: userSignature} = await Ed25519Keypair.fromSecretKey(user.zk.ephemeralKeyPair.secretKey).signTransaction(Bcs.fromB64(rawTransaction));
+  return zk.getZkLoginSignature({
+    inputs:   {
+      ...user.zk.zkpoof,
+      addressSeed: user.addressSeed
+    },
+    maxEpoch: user.zk.maxEpoch,
+    userSignature
+  });
+};
+
+// Zklogin sign
+let zkLoginSignature = await zkSignTransaction(user, transferTx.rawTransaction);
+
+// Send transaction
+const result = await connection.sendTransferTransaction({
+  hash:    transferTx.hash,
+  txBytes: transferTx.rawTransaction,
+  userSig: zkLoginSignature
+});
+assert(result.status === 'SUCCESS', 'Send transfer transaction should success.');
+assert(result.hash === transferTx.hash, 'Send transfer transaction hash should be equal transferTx.hash');
+```

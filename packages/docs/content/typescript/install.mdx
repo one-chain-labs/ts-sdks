@@ -1,25 +1,25 @@
 ---
-title: Install Sui TypeScript SDK
+title: Install OneChain TypeScript SDK
 ---
 
-The Sui TypeScript SDK is available in the
-[Sui TS SDK monorepo](https://github.com/one-chain-labs/ts-sdks/tree/main/sdk) and NPM.
+The OneChain TypeScript SDK is available in the
+[OneChain TS SDK monorepo](https://github.com/one-chain-labs/ts-sdks/tree/main/sdk) and NPM.
 
 ## Install from NPM
 
-To use the Sui TypeScript SDK in your project, run the following command in your project root:
+To use the OneChain TypeScript SDK in your project, run the following command in your project root:
 
 ```sh npm2yarn
 npm i @onelabs/sui
 ```
 
-## Experimental tag for use with a local Sui network
+## Experimental tag for use with a local OneChain network
 
-Projects developing against one of the on-chain Sui networks (Devnet, Testnet, Mainnet) should use
+Projects developing against one of the on-chain OneChain networks (Devnet, Testnet, Mainnet) should use
 the base SDK published in the NPM registry (previous section) because the code aligns with the
 relevant JSON-RPC. If your developing against a
 [local network](https://docs.sui.io/guides/developer/getting-started/local-network) built from the
-`main` branch of the Sui monorepo, however, you should use the `experimental`-tagged SDK package as
+`main` branch of the OneChain monorepo, however, you should use the `experimental`-tagged SDK package as
 it contains the latest features (or a local build detailed in the section that follows).
 
 ```sh npm2yarn
@@ -28,7 +28,7 @@ npm i @onelabs/sui@experimental
 
 ## Install from local build
 
-To build the SDK from the Sui monorepo, you must use [pnpm](https://pnpm.io/). With pnpm installed,
+To build the SDK from the OneChain monorepo, you must use [pnpm](https://pnpm.io/). With pnpm installed,
 run the following command from the `sui` root directory:
 
 ```bash
@@ -41,7 +41,7 @@ pnpm sdk build
 With the SDK built, you can import the library from your `sui` project. To do so, use a path to the
 `ts-sdks/packages/typescript` directory that is relative to your project. For example, if you
 created a folder `my-sui-project` at the same level as `sui`, use the following to import the
-locally built Sui TypeScript package:
+locally built OneChain TypeScript package:
 
 ```bash
 pnpm add ../ts-sdks/packages/typescript

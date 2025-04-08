@@ -1,0 +1,6 @@
+{
+	"root": true,
+	"title": "ZkWallet",
+	"description": "Send Oct with a link",
+	"pages": ["index", "login", "functions"]
+}

@@ -1,9 +1,9 @@
 ---
-title: Sui TypeScript SDK Quick Start
+title: OneChain TypeScript SDK Quick Start
 ---
 
-The Sui TypeScript SDK is a modular library of tools for interacting with the Sui blockchain. Use it
-to send queries to RPC nodes, build and sign transactions, and interact with a Sui or local network.
+The OneChain TypeScript SDK is a modular library of tools for interacting with the OneChain blockchain. Use it
+to send queries to RPC nodes, build and sign transactions, and interact with a OneChain or local network.
 
 ## Installation
 
@@ -13,25 +13,25 @@ npm i @onelabs/sui
 
 ## Network locations
 
-The following table lists the locations for Sui networks.
+The following table lists the locations for OneChain networks.
 
 | Network | Full node                             | faucet                                |
 | ------- | ------------------------------------- | ------------------------------------- |
 | local   | `http://127.0.0.1:9000` (default)     | `http://127.0.0.1:9123/gas` (default) |
-| Devnet  | `https://fullnode.devnet.sui.io:443`  | `https://faucet.devnet.sui.io/gas`    |
-| Testnet | `https://fullnode.testnet.sui.io:443` | `https://faucet.testnet.sui.io/gas`   |
-| Mainnet | `https://fullnode.mainnet.sui.io:443` | `null`                                |
+| Devnet  | `https://rpc-devnet.onelabs.cc:443`  | `https://rpc-devnet.onelabs.cc:443/gas`    |
+| Testnet | `https://rpc-testnet.onelabs.cc:443` | `https://rpc-testnet.onelabs.cc:443/gas`   |
+| Mainnet | `https://rpc.mainnet.onelabs.cc:443` | `null`                                |
 
 <Callout type="warn">
 
 Use dedicated nodes/shared services rather than public endpoints for production apps. The public
-endpoints maintained by Mysten Labs (`fullnode.<NETWORK>.sui.io:443`) are rate-limited, and support
+endpoints maintained by OneChain Labs (`rpc-.<NETWORK>.onelabs.cc:443`) are rate-limited, and support
 only 100 requests per 30 seconds or so. Do not use public endpoints in production applications with
 high traffic volume.
 
 You can either run your own Full nodes, or outsource this to a professional infrastructure provider
 (preferred for apps that have high traffic). You can find a list of reliable RPC endpoint providers
-for Sui on the [Sui Dev Portal](https://sui.io/developers#dev-tools) using the **Node Service** tab.
+for OneChain on the [OneChain Dev Portal](https://sui.io/developers#dev-tools) using the **Node Service** tab.
 
 </Callout>
 
@@ -40,8 +40,8 @@ for Sui on the [Sui Dev Portal](https://sui.io/developers#dev-tools) using the *
 The SDK contains a set of modular packages that you can use independently or together. Import just
 what you need to keep your code light and compact.
 
-- [`@onelabs/sui/client`](/typescript/sui-client) - A client for interacting with Sui RPC nodes.
-- [`@onelabs/sui/bcs`](/typescript/bcs) - A BCS builder with pre-defined types for Sui.
+- [`@onelabs/sui/client`](/typescript/sui-client) - A client for interacting with OneChain RPC nodes.
+- [`@onelabs/sui/bcs`](/typescript/bcs) - A BCS builder with pre-defined types for OneChain.
 - [`@onelabs/sui/transactions`](/typescript/transaction-building/basics) - Utilities for building and
   interacting with transactions.
 - [`@onelabs/sui/keypairs/*`](/typescript/cryptography/keypairs) - Modular exports for specific
@@ -52,6 +52,6 @@ what you need to keep your code light and compact.
   cryptography.
 - [`@onelabs/sui/multisig`](/typescript/cryptography/multisig) - Utilities for working with multisig
   signatures.
-- [`@onelabs/sui/utils`](/typescript/utils) - Utilities for formatting and parsing various Sui types.
-- [`@onelabs/sui/faucet`](/typescript/faucet) - Methods for requesting SUI from a faucet.
+- [`@onelabs/sui/utils`](/typescript/utils) - Utilities for formatting and parsing various OneChain types.
+- [`@onelabs/sui/faucet`](/typescript/faucet) - Methods for requesting OCT from a faucet.
 - [`@onelabs/sui/zklogin`](/typescript/zklogin) - Utilities for working with zkLogin.
