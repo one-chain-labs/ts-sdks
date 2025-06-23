@@ -4,7 +4,7 @@
 export function getFullnodeUrl(network: 'mainnet' | 'testnet' | 'devnet' | 'localnet') {
 	switch (network) {
 		case 'mainnet':
-			return 'https://rpc.onelabs.cc:443';
+			return 'https://rpc-mainnet.onelabs.cc:443';
 		case 'testnet':
 			return 'https://rpc-testnet.onelabs.cc:443';
 		case 'devnet':

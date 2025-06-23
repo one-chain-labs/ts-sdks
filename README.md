@@ -1,4 +1,4 @@
-# Mysten Typescript SDKs
+# One Typescript SDKs
 
 A collection of TypeScript SDKs for interacting with the Sui blockchain ecosystem.
 

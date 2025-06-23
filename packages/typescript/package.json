@@ -1,9 +1,9 @@
 {
 	"name": "@onelabs/sui",
-	"author": "Mysten Labs <build@onelabslabs.com>",
-	"description": "Sui TypeScript API(Work in Progress)",
-	"homepage": "https://sdk.mystenlabs.com",
-	"version": "1.26.1",
+	"author": "One Labs <https://discord.com/invite/QdeVgZrCEX>",
+	"description": "Onechain TypeScript API(Work in Progress)",
+	"homepage": "https://doc-testnet.onelabs.cc/typescript",
+	"version": "1.26.2",
 	"license": "Apache-2.0",
 	"sideEffects": false,
 	"files": [
