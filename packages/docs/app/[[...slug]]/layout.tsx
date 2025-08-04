@@ -44,11 +44,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 						url: '/zksend',
 					},
 					{
-						title: 'wallet',
-						description: 'Support zklogin via hone',
-						url: '/wallet',
-					},
-					{
 						title: 'API Reference',
 						url: '/typedoc/index.html',
 					},
